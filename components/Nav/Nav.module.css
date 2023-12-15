@@ -1,12 +1,31 @@
 .navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   margin-right: auto;
   margin-left: auto;
-  max-width: 1500px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 100%;
   padding: 2rem 3rem;
+  background-color: var(--green);
+  z-index: 1000;
+  border-bottom: 1px solid var(--tan);
+}
+
+.navbar::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.03;
+  pointer-events: none;
+  background: url(../../public/images/noise.gif);
+  z-index: -1;
 }
 
 .navBarLeft {
@@ -166,7 +185,7 @@
     text-transform: uppercase;
     letter-spacing: -2px;
   }
-  
+
   .bottomDesktop {
     display: flex;
     align-items: flex-start;
@@ -185,8 +204,8 @@
   }
 
   .btnContainer {
-   flex-direction: column;
-   align-items: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
   }
 
   .bottom {

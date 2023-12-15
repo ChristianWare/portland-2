@@ -6,7 +6,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 5rem;
+  padding-top: 6rem;
 }
 
 .left {
@@ -41,6 +41,9 @@
 
 .right {
   flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .bottom {
@@ -102,6 +105,10 @@
 }
 
 @media screen and (max-width: 568px) {
+  .content {
+    padding-top: 8rem;
+  }
+  
   .heading,
   .copy {
     width: 100%;

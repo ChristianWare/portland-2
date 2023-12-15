@@ -62,6 +62,7 @@ function Nav() {
 
   return (
     <header className={styles.header}>
+      <div className={styles.navbarBackground}></div>
       <nav className={styles.navbar}>
         <div className={styles.logo}>
           <Link href='/' className={styles.logo}>
@@ -85,7 +86,6 @@ function Nav() {
                 {navItem.text}
               </Link>
             </li>
-            
           ))}
           <div className={styles.btnContainer}>
             <Button

@@ -8,7 +8,7 @@ const AboutSection = () => {
     {
       heading: "Full-Stack Proficiency",
       value:
-        "Highlight your skills in both front-end and back-end development, showcasing your ability to create comprehensive web applications from start to finish. Mention any relevant technologies, frameworks, or languages you're proficient in.",
+        "I am skilled in both front-end and back-end development, and i have the ability to create comprehensive web applications from start to finish. my tools of choice are Next.js and React.",
     },
     {
       heading: "User-Centric Approach",
