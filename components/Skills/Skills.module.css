@@ -6,7 +6,7 @@
   color: var(--tan);
 }
 
-.frontEnd {
+.frontEnd, .backEnd {
   margin-top: 5rem;
 }
 

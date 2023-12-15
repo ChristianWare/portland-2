@@ -1,5 +1,14 @@
 import Elite from "../public/images/elite.png";
 import Typescript from "../public/icons/typescript.png";
+import NextJs from "../public/icons/next.png";
+import ReactJs from "../public/icons/react.png";
+import Tailwind from "../public/icons/tailwind.png";
+import Framer from "../public/icons/framer.png";
+import NodeJs from "../public/icons/nodejs.png";
+import Mongo from "../public/icons/mongodb.png";
+import Prisma from "../public/icons/prisma.png";
+import Strapi from "../public/icons/strapi.png";
+import Sanity from "../public/icons/sanity.png";
 
 export const projects = [
   {
@@ -30,11 +39,11 @@ export const projects = [
 
 export const frontEnd = [
   {
-    icon: Typescript,
+    icon: NextJs,
     name: "Next.js",
   },
   {
-    icon: Typescript,
+    icon: ReactJs,
     name: "React",
   },
   {
@@ -42,34 +51,34 @@ export const frontEnd = [
     name: "Typescript",
   },
   {
-    icon: Typescript,
+    icon: Tailwind,
     name: "Tailwind",
   },
   {
-    icon: Typescript,
+    icon: Framer,
     name: "Framer Motion",
   },
 ] as const;
 
 export const backEnd = [
   {
-    icon: Typescript,
+    icon: NodeJs,
     name: "Node.js",
   },
   {
-    icon: Typescript,
+    icon: Mongo,
     name: "Mongo DB",
   },
   {
-    icon: Typescript,
+    icon: Prisma,
     name: "Prisma",
   },
   {
-    icon: Typescript,
+    icon: Strapi,
     name: "Strapi",
   },
   {
-    icon: Typescript,
+    icon: Sanity,
     name: "Sanity",
   },
 ] as const;
