@@ -2,6 +2,8 @@ import Button from "../Button/Button";
 import LayoutWrapper from "../LayoutWrapper";
 import Nav from "../Nav/Nav";
 import styles from "./Hero.module.css";
+import Chris from "../../public/images/chris.jpeg";
+import CircleImage from "../CircleImage/CircleImage";
 
 const Hero = () => {
   const date = new Date();
@@ -24,7 +26,11 @@ const Hero = () => {
               <Button btnType='secondary' text='My Previous Work' href='/' />
             </div>
           </div>
-          <div className={styles.right}></div>
+          <div className={styles.right}>
+            <div className={styles.box}>
+              <CircleImage src={Chris} />
+            </div>
+          </div>
         </div>
         <div className={styles.bottom}>
           <div className={styles.detail}>
