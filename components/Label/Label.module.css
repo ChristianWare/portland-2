@@ -1,0 +1,22 @@
+.span {
+  font-weight: 700;
+  font-size: 1.4rem;
+  color: var(--green);
+  margin-bottom: 1rem;
+  display: block;
+  font-family: var(--messinaCondensed);
+  text-transform: uppercase;
+  z-index: 999;
+}
+
+.white {
+  color: var(--green);
+}
+
+.tan {
+  color: var(--tan);
+}
+
+.green {
+  color: var(--green);
+}

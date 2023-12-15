@@ -1,3 +1,35 @@
 .container {
-    background-color: var(--tan);
+  background-color: var(--tan);
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.left,
+.right {
+  width: 100%;
+  flex: 1;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.heading {
+  margin-bottom: 2rem;
+  color: var(--green);
+}
+
+.copy {
+  font-size: 2.4rem;
+  color: var(--green);
+  width: 90%;
+  line-height: 120%;
 }
