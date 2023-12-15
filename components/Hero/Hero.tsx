@@ -9,7 +9,7 @@ const Hero = () => {
   const date = new Date();
 
   return (
-    <section className={styles.container}>
+    <section className={styles.container} id='home'>
       <Nav />
       <LayoutWrapper>
         <div className={styles.content}>
