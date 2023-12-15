@@ -4,9 +4,9 @@
 
 .content {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
-  gap: 3rem;
+  gap: 5rem;
 }
 
 .left,
@@ -32,4 +32,60 @@
   color: var(--green);
   width: 90%;
   line-height: 120%;
+}
+
+.btnContainer {
+  margin-top: 3rem;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.mapContainer {
+  width: 100%;
+}
+
+.box {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 2rem;
+  border-bottom: 1px solid var(--black);
+  padding: 2rem 0rem;
+}
+
+.heading2 {
+  font-size: 2.4rem;
+  border-bottom: 1px solid var(--black);
+  width: 100%;
+  padding-bottom: 2rem;
+  color: var(--black);
+}
+
+.valueHeading {
+  font-size: 1.6rem;
+  flex: 1;
+}
+
+.value {
+  font-size: 1.8rem;
+  width: 100%;
+  color: var(--black);
+  flex: 2;
+}
+
+@media screen and (max-width: 968px) {
+  .content {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .box {
+    flex-direction: column;
+  }
 }
