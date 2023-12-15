@@ -8,16 +8,16 @@ import Label from "../Label/Label";
 const FinalCta = () => {
   return (
     <>
-      <section className={styles.container}>
+      <section className={styles.container} id='contact'>
         <div className={styles.layoutWrapper}>
           <div className={styles.content}>
             <div className={styles.bottom}>
               <div className={styles.left}>
                 <Label text='480-623-6780' color='green' />
-                <h2 className={styles.heading}>Contact Us</h2>
+                <h2 className={styles.heading}>Contact Me</h2>
                 <h3 className={styles.headingii}>
-                  Your rental property deserves more than just a listing. It
-                  deserves a spotlight.
+                  Thank you for reviewing my portfolio. I looking forward to
+                  speaking with you.
                 </h3>
                 <p className={styles.topText}>
                   Reach out to us today to see how you can begin to take
@@ -26,8 +26,7 @@ const FinalCta = () => {
                 </p>
               </div>
               <div className={styles.right}>
-                <div
-                >
+                <div>
                   <ContactForm />
                 </div>
               </div>

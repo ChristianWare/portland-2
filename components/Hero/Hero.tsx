@@ -18,8 +18,9 @@ const Hero = () => {
               Hi Recruiters. <br />I built this website with you in mind.
             </h1>
             <p className={styles.copy}>
-              Below you will find all the information you need to make an
-              informed decision about me.
+              My name is Chris Ware and I am a Web Developer. Below you will
+              find all the information you need to make an informed decision
+              about me.
             </p>
             <div className={styles.btnContainer}>
               <Button btnType='primary' text='Download My Resume' href='/' />

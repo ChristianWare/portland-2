@@ -17,7 +17,11 @@ const Portfolio = () => {
               </div>
               <h3 className={styles.title}>{x.title}</h3>
               <p className={styles.descr}>{x.description}</p>
-              <Link href='/' className={styles.leanrMoreBtn}>
+              <Link
+                href={x.href}
+                className={styles.leanrMoreBtn}
+                target='_blank'
+              >
                 Live Site &gt;
               </Link>
             </div>

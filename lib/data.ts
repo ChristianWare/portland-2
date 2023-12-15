@@ -1,4 +1,7 @@
 import Elite from "../public/images/elite.png";
+import Nier from "../public/images/nier.png";
+import Cwagency from "../public/images/cwagency.png";
+import Taco from "../public/images/taco.png";
 import Typescript from "../public/icons/typescript.png";
 import NextJs from "../public/icons/next.png";
 import ReactJs from "../public/icons/react.png";
@@ -12,28 +15,32 @@ import Sanity from "../public/icons/sanity.png";
 
 export const projects = [
   {
-    src: Elite,
+    src: Taco,
     title: "Taco Bell Redesign",
     description:
       "This website is a redesign of Taco Bell's web page. I wanted the main focus on the site to be the menu so that it is able to be filtered to show breakfast, lunch, and all items on the menu at the same time. The Site is mobile responsive, and received high scores on Google's Page Speed Insights.",
+    href: "/",
   },
   {
-    src: Elite,
+    src: Cwagency,
     title: "Chris Ware Agency",
     description:
       "This website is a redesign of Taco Bell's web page. I wanted the main focus on the site to be the menu so that it is able to be filtered to show breakfast, lunch, and all items on the menu at the same time. The Site is mobile responsive, and received high scores on Google's Page Speed Insights.",
+    href: "https://www.chrisware.agency/",
   },
   {
     src: Elite,
     title: "Elite Retreat Rentals",
     description:
       "This website is a redesign of Taco Bell's web page. I wanted the main focus on the site to be the menu so that it is able to be filtered to show breakfast, lunch, and all items on the menu at the same time. The Site is mobile responsive, and received high scores on Google's Page Speed Insights.",
+    href: "https://case-study-one.vercel.app/",
   },
   {
-    src: Elite,
+    src: Nier,
     title: "Nier Transportation",
     description:
       "This website is a redesign of Taco Bell's web page. I wanted the main focus on the site to be the menu so that it is able to be filtered to show breakfast, lunch, and all items on the menu at the same time. The Site is mobile responsive, and received high scores on Google's Page Speed Insights.",
+    href: "https://www.niertransportation.com/",
   },
 ] as const;
 
@@ -82,7 +89,6 @@ export const backEnd = [
     name: "Sanity",
   },
 ] as const;
-
 
 export const footer = [
   {

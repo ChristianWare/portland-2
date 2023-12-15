@@ -1,23 +1,10 @@
-"use client";
-
 import styles from "./Footer.module.css";
 import Link from "next/link";
-import { useState } from "react";
 import { footer } from "@/lib/data";
 import Instagram from "../../public/icons/instagram.svg";
 import LinkedIn from "../../public/icons/linkedin.svg";
 
 const Footer = () => {
-  const [selected, setSelected] = useState(null);
-
-  const toggle = (i: any) => {
-    if (selected === i) {
-      return setSelected(null);
-    }
-
-    setSelected(i);
-  };
-
   return (
     <footer className={styles.container}>
       <div className={styles.content}>
@@ -25,7 +12,9 @@ const Footer = () => {
           <div className={styles.middleDesktop}>
             {footer.map((f, index) => (
               <div key={index} className={styles.headingContainer}>
-                <Link href={f.href} className={styles.heading}>{f.heading}</Link>
+                <Link href={f.href} className={styles.heading}>
+                  {f.heading}
+                </Link>
               </div>
             ))}
           </div>
