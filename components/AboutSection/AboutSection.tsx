@@ -8,17 +8,17 @@ const AboutSection = () => {
     {
       heading: "Full-Stack Proficiency",
       value:
-        "I am skilled in both front-end and back-end development, and i have the ability to create comprehensive web applications from start to finish. my tools of choice are Next.js and React.",
+        "I am skilled in both front-end and back-end development, and I have the ability to create comprehensive web applications from start to finish. My tools of choice are Next.js/React.",
     },
     {
       heading: "User-Centric Approach",
       value:
-        "Emphasize your commitment to user experience (UX) by mentioning your focus on creating intuitive and user-friendly interfaces. Highlight any user testing, feedback incorporation, or usability studies you've conducted to optimize your projects.",
+        "The success of a website ultimately depends on how well it serves and engages its users, so I focus on creating intuitive and user-friendly interface.",
     },
     {
       heading: "Performance Optimization",
       value:
-        "Showcase your knowledge and experience in optimizing web applications for speed and performance. Highlight any specific techniques or tools you've used to ensure fast load times and optimal performance across various devices and network conditions.",
+        "I optimize web applications for speed, performance and SEO. They all have fast load times and an optimal performance across various devices and network conditions.",
     },
   ];
 
@@ -48,7 +48,6 @@ const AboutSection = () => {
                 <div key={index} className={styles.box}>
                   <h4 className={styles.valueHeading}>{x.heading}</h4>
                   <p className={styles.value}>{x.value}</p>
-                
                 </div>
               ))}
             </div>
