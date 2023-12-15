@@ -23,7 +23,7 @@ const AboutSection = () => {
   ];
 
   return (
-    <section className={styles.container}>
+    <section className={styles.container} id='about'>
       <LayoutWrapper>
         <div className={styles.content}>
           <div className={styles.left}>

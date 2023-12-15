@@ -48,7 +48,7 @@ function Nav() {
     },
     {
       text: "Projects",
-      href: "#features",
+      href: "#projects",
     },
     {
       text: "Skills",
