@@ -1,23 +1,8 @@
 :root {
-  --green: #031403;
-  --green2: #e9ff92;
-  --gray: #f4f4f6;
   --black: #2a2a2a;
-  --black2: #383838;
-  --white: #ffffff;
-  --white2: #b7b5b5;
-  --border: #d4d4d4;
-  --border2: #c3c3c3;
-  --border3: #aeaeae;
-  --border4: #686868;
-  --text: #989696;
-  --text2: #323131;
-  --text3: #434343;
-  --text4: #6a6a6a;
-  --tan: #f1f1e9;
-  --tan2: #d3d3b5;
-  --tan3: #f7f1cf;
-  --shadow: 20px 20px 50px rgba(0, 0, 0, 0.2);
+  --green: #295f4e;
+  --green2: #6db193;
+  --tan: #f2ecdd;
 }
 
 * {
@@ -65,10 +50,10 @@ span {
 
 h1 {
   font-size: 10rem;
-  line-height: 90%;
+  line-height: 80%;
 
   text-transform: uppercase;
-  letter-spacing: -1px;
+  letter-spacing: -3px;
 }
 
 h2 {
@@ -147,6 +132,10 @@ input:focus {
 @media screen and (max-width: 568px) {
   html {
     font-size: 50%;
+  }
+
+  h1 {
+    font-size: 8rem;
   }
 
   p,

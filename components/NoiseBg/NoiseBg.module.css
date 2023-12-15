@@ -1,0 +1,18 @@
+.background {
+    background-color: var(--accent4);
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.background::before {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    content: '';
+    opacity: .03;
+    pointer-events: none;
+    background: url(../../public/images/noise.gif);
+}

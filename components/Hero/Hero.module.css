@@ -1,0 +1,80 @@
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 3rem;
+}
+
+.heading {
+  color: var(--green2);
+}
+
+.copy {
+  font-size: 2.4rem;
+  color: var(--tan);
+  width: 60%;
+}
+
+.btnContainer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 3rem;
+}
+
+.left {
+  width: 100%;
+  flex: 2;
+}
+
+.right {
+  flex: 1;
+}
+
+@media screen and (max-width: 968px) {
+  .content {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .heading,
+  .copy {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .copy {
+    width: 80%;
+  }
+
+  .btnContainer {
+    justify-content: center;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .heading,
+  .copy {
+    width: 100%;
+    text-align: left;
+  }
+
+  .br {
+    display: none;
+  }
+
+  .btnContainer {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

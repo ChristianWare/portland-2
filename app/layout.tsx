@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import localFont from "next/font/local";
 import "./globals.css";
+import NoiseBg from "@/components/NoiseBg/NoiseBg";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -32,7 +33,7 @@ export default function RootLayout({
       <body
         className={`${inter.className} ${messinaCondensed.variable} ${messina.variable}`}
       >
-        {children}
+        <NoiseBg>{children}</NoiseBg>
       </body>
     </html>
   );
