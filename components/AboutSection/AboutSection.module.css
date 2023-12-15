@@ -85,6 +85,11 @@
 }
 
 @media screen and (max-width: 568px) {
+ .btnContainer {
+  display: grid;
+  width: 100%;
+ }
+ 
   .box {
     flex-direction: column;
   }
