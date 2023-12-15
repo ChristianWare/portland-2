@@ -18,9 +18,7 @@
   -webkit-tap-highlight-color: transparent;
 }
 
-section {
-  background-color: var(--green);
-}
+
 
 html {
   font-size: 62.5%;

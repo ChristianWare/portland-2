@@ -4,6 +4,8 @@ import Nav from "../Nav/Nav";
 import styles from "./Hero.module.css";
 
 const Hero = () => {
+  const date = new Date();
+
   return (
     <section className={styles.container}>
       <Nav />
@@ -23,6 +25,19 @@ const Hero = () => {
             </div>
           </div>
           <div className={styles.right}></div>
+        </div>
+        <div className={styles.bottom}>
+          <div className={styles.detail}>
+            {date.toLocaleTimeString("en-US", {
+              timeZone: "America/Phoenix",
+              hour: "numeric",
+              minute: "numeric",
+              hour12: true,
+            })}
+            : Phoenix, AZ
+          </div>
+          <div className={styles.detail}>LinkedIn</div>
+          <div className={styles.detail}>Git Hub</div>
         </div>
       </LayoutWrapper>
     </section>
