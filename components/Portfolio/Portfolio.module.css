@@ -60,12 +60,13 @@
   transition: all 0.1s ease-in;
 }
 
-.leanrMoreBtn:hover, .leanrMoreBtnii:hover {
+.leanrMoreBtn:hover,
+.githubBtn:hover {
   background-color: var(--green);
   color: var(--green2);
 }
 
-.leanrMoreBtnii {
+.githubBtn {
   position: absolute;
   content: "";
   top: -61px;
@@ -95,6 +96,7 @@
 @media screen and (max-width: 768px) {
   .bottom {
     grid-template-columns: repeat(1, 1fr);
+    grid-row-gap: 20rem;
   }
 
   .box:nth-child(odd) {
@@ -104,10 +106,19 @@
   .leanrMoreBtn {
     bottom: -53px;
   }
+
+  .githubBtn {
+    top: -53px;
+  }
 }
 
-@media screen and (max-width: 470px) {
+@media screen and (max-width: 568px) {
   .leanrMoreBtn {
     bottom: -49px;
   }
+
+  .githubBtn {
+    top: -49px;
+  }
 }
+

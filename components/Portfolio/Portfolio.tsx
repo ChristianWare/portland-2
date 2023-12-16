@@ -27,7 +27,7 @@ const Portfolio = () => {
               </Link>
               <Link
                 href={x.github}
-                className={styles.leanrMoreBtnii}
+                className={styles.githubBtn}
                 target='_blank'
               >
                 Github &gt;
