@@ -43,6 +43,18 @@
   color: var(--black);
 }
 
+.tertiary {
+  color: var(--black);
+  background-color: var(--green2);
+  border: 1px solid var(--black);
+}
+
+.tertiary:hover {
+  background-color: var(--green);
+  color: var(--green2);
+  border: 1px solid var(--green);
+}
+
 .navBtn {
   padding: 15px 44px;
   background-color: var(--green2);

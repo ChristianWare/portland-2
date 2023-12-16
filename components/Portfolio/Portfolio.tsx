@@ -3,6 +3,7 @@ import LayoutWrapper from "../LayoutWrapper";
 import styles from "./Portfolio.module.css";
 import Link from "next/link";
 import Image from "next/image";
+import Button from "../Button/Button";
 
 const Portfolio = () => {
   return (
@@ -16,6 +17,9 @@ const Portfolio = () => {
                 <Image src={x.src} alt={x.title} fill className={styles.img} />
               </div>
               <h3 className={styles.title}>{x.title}</h3>
+              <div className={styles.btnLink}>
+                <Button text='Github' btnType='tertiary' href='/' />
+              </div>
               <p className={styles.descr}>{x.description}</p>
               <Link
                 href={x.href}
