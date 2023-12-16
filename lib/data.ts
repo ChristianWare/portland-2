@@ -19,7 +19,7 @@ export const projects = [
     title: "Taco Bell Redesign",
     description:
       "This project is a redesign of Taco Bell's website. The front end was built with next.js, and the CMS is Sanity.io. The styling was done with CSS Modules so that I can have the most flexibility for design. Each menu item has its slug page where more details are given on that particular item.",
-    href: "/",
+    href: "https://www.livemas.dev/",
     github: "https://github.com/ChristianWare/Tacobell-ii",
   },
   {
