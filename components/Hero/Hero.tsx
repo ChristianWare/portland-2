@@ -7,8 +7,6 @@ import CircleImage from "../CircleImage/CircleImage";
 import Link from "next/link";
 
 const Hero = () => {
-  const date = new Date();
-
   return (
     <section className={styles.container} id='home'>
       <Nav />
@@ -25,7 +23,13 @@ const Hero = () => {
               about me.
             </p>
             <div className={styles.btnContainer}>
-              <Button btnType='primary' text='Download My Resume' href='/' />
+              <Button
+                btnType='primary'
+                text='Download My Resume'
+                href='/ChrisWareResume2024.pdf'
+                target='_blank'
+                download={true}
+              />
               <Button
                 btnType='secondary'
                 text='My Previous Work'
@@ -40,7 +44,7 @@ const Hero = () => {
           </div>
         </div>
         <div className={styles.bottom}>
-          <div className={styles.detail}>
+          {/* <div className={styles.detail}>
             {date.toLocaleTimeString("en-US", {
               timeZone: "America/Phoenix",
               hour: "numeric",
@@ -48,7 +52,7 @@ const Hero = () => {
               hour12: true,
             })}
             : Phoenix, AZ
-          </div>
+          </div> */}
           <Link
             href='https://www.linkedin.com/in/christian-ware/'
             target='_blank'

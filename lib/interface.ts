@@ -6,6 +6,7 @@ export interface ButtonProps {
   text: string;
   btnType: string;
   target?: string;
+  download?: boolean;
 }
 
 export interface ImageGridProps {
