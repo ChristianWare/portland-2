@@ -26,7 +26,7 @@ const Hero = () => {
             <div className={styles.btnContainer}>
               <Button
                 btnType='primary'
-                text='Download My Resume'
+                text='Download My Resume >'
                 href='/ChrisWareResume2024.pdf'
                 target='_blank'
                 download={true}
