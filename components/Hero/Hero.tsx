@@ -5,6 +5,7 @@ import styles from "./Hero.module.css";
 import Chris from "../../public/images/chris.jpeg";
 import CircleImage from "../CircleImage/CircleImage";
 import Link from "next/link";
+import Time from "../Time/Time";
 
 const Hero = () => {
   return (
@@ -44,15 +45,7 @@ const Hero = () => {
           </div>
         </div>
         <div className={styles.bottom}>
-          {/* <div className={styles.detail}>
-            {date.toLocaleTimeString("en-US", {
-              timeZone: "America/Phoenix",
-              hour: "numeric",
-              minute: "numeric",
-              hour12: true,
-            })}
-            : Phoenix, AZ
-          </div> */}
+          <Time />
           <Link
             href='https://www.linkedin.com/in/christian-ware/'
             target='_blank'

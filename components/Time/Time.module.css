@@ -13,3 +13,10 @@
   background-color: var(--green2);
   color: var(--black);
 }
+
+@media screen and (max-width: 568px) {
+  .detail {
+    border-bottom: 1px solid var(--tan);
+    border-right: none;
+  }
+}
