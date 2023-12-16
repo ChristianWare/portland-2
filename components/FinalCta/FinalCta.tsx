@@ -16,7 +16,7 @@ const FinalCta = () => {
                 <Label text='480-623-6780' color='green' />
                 <h2 className={styles.heading}>Contact Me</h2>
                 <h3 className={styles.headingii}>
-                  Thank you for reviewing my portfolio. I looking forward to
+                  Thank you for taking the time to review my portfolio. I am looking forward to
                   speaking with you.
                 </h3>
                 <p className={styles.topText}>
