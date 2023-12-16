@@ -16,7 +16,7 @@ const Hero = () => {
           <div className={styles.left}>
             <h1 className={styles.heading}>
               Hi Recruiters. <br />
-              My name is Christian Ware.
+              My name is <br /> Christian Ware.
             </h1>
             <p className={styles.copy}>
               My name is Chris Ware and I am a Web Developer. Below you will
