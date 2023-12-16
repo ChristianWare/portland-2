@@ -23,14 +23,14 @@
   position: relative;
   z-index: 1;
   width: 100%;
-  color: var(--black);
+  color: var(--tan);
   background-color: var(--green);
-  border: 1px solid var(--border3);
+  border: 1px solid var(--green);
 }
 
 .btn:hover {
+  border: 1px solid var(--tan);
   background-color: transparent;
-  color: var(--green);
 }
 
 @media screen and (max-width: 768px) {

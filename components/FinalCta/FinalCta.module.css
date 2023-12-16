@@ -60,9 +60,11 @@
 .topText {
   color: var(--tan);
   margin-top: 3rem;
-  font-size: 1.6rem;
+  font-size: 2rem;
   font-weight: 500;
   width: 80%;
+  display: block;
+  
 }
 
 .btnContainer {

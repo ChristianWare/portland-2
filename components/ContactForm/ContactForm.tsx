@@ -80,7 +80,6 @@ const ContactForm = () => {
                     <label htmlFor='email'>
                       Email <span className={styles.required}>*</span>
                     </label>
-                    <span>So we can respond. We won&#39;t send you spam.</span>
                     <input
                       id='senderEmail'
                       type='email'
@@ -96,7 +95,6 @@ const ContactForm = () => {
                     <label htmlFor='message'>
                       Message <span className={styles.required}>*</span>
                     </label>
-                    <span>No solicitations, please.</span>
                     <textarea
                       id='message'
                       name='message'

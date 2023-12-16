@@ -4,6 +4,7 @@ import Nav from "../Nav/Nav";
 import styles from "./Hero.module.css";
 import Chris from "../../public/images/chris.jpeg";
 import CircleImage from "../CircleImage/CircleImage";
+import Link from "next/link";
 
 const Hero = () => {
   const date = new Date();
@@ -15,7 +16,8 @@ const Hero = () => {
         <div className={styles.content}>
           <div className={styles.left}>
             <h1 className={styles.heading}>
-              Hi Recruiters. <br />I built this website with you in mind.
+              Hi Recruiters. <br />
+              My name is Christian Ware.
             </h1>
             <p className={styles.copy}>
               My name is Chris Ware and I am a Web Developer. Below you will
@@ -24,7 +26,11 @@ const Hero = () => {
             </p>
             <div className={styles.btnContainer}>
               <Button btnType='primary' text='Download My Resume' href='/' />
-              <Button btnType='secondary' text='My Previous Work' href='/' />
+              <Button
+                btnType='secondary'
+                text='My Previous Work'
+                href='#projects'
+              />
             </div>
           </div>
           <div className={styles.right}>
@@ -43,8 +49,20 @@ const Hero = () => {
             })}
             : Phoenix, AZ
           </div>
-          <div className={styles.detail}>LinkedIn</div>
-          <div className={styles.detail}>Git Hub</div>
+          <Link
+            href='https://www.linkedin.com/in/christian-ware/'
+            target='_blank'
+            className={styles.detail}
+          >
+            LinkedIn
+          </Link>
+          <Link
+            href='https://github.com/ChristianWare'
+            target='_blank'
+            className={styles.detail}
+          >
+            Git Hub
+          </Link>
         </div>
       </LayoutWrapper>
     </section>

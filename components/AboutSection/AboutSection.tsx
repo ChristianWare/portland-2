@@ -38,7 +38,7 @@ const AboutSection = () => {
               them to action.
             </p>
             <div className={styles.btnContainer}>
-              <Button href='#' text='Contact Me' btnType='primary' />
+              <Button href='#contact' text='Contact Me' btnType='primary' />
             </div>
           </div>
           <div className={styles.right}>

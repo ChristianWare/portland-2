@@ -85,7 +85,6 @@
 .labelInputBox input,
 .labelInputBox textarea {
   border-radius: 5px;
-  border: 1px solid var(--border2);
   height: 40px;
   width: 100%;
   background-color: var(--tan);
