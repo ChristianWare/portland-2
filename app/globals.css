@@ -42,7 +42,7 @@ h6,
 span {
   font-family: var(--messinaCondensed);
   color: var(--black);
-  hyphens: auto;
+  /* hyphens: auto; */
   text-transform: uppercase;
 }
 
