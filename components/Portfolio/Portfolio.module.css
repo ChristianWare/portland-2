@@ -16,6 +16,7 @@
 
 .box {
   border: 1px solid var(--black);
+  background-color: var(--green2);
   padding: 2rem;
   border-right: none;
   display: flex;
