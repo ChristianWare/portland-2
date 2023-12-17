@@ -19,8 +19,8 @@ const FinalCta = () => {
                   Thank you for taking the time to review my portfolio. I look
                   forward to speaking with you.
                 </h3>
-                <Link href='tel:+4806236780' className={styles.topText}>
-                  480-623-6780
+                <Link href='tel:+6236326780' className={styles.topText}>
+                  623-632-6780
                 </Link>
                 <Link
                   href='mailto:chris.ware.dev@gmail.com'

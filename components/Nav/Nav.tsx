@@ -89,8 +89,8 @@ function Nav() {
           ))}
           <div className={styles.btnContainer}>
             <Button
-              href='tel:+4806236780'
-              text='480-623-6780'
+              href='tel:+6236326780'
+              text='623-632-6780'
               btnType='navBtn'
             />
             <Button
