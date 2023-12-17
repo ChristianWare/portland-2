@@ -70,6 +70,20 @@
   color: var(--green2);
 }
 
+.learnMore {
+  border: 1px solid var(--black);
+  border-radius: 0px;
+  border-top: none;
+  padding: 2rem 5rem;
+}
+
+.github {
+  border: 1px solid var(--black);
+  border-radius: 0px;
+  border-bottom: none;
+  padding: 2rem 5rem;
+}
+
 @media screen and (max-width: 568px) {
   .btn {
     font-size: 2rem;

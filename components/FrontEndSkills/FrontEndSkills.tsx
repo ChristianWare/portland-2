@@ -6,7 +6,7 @@ const FrontEndSkills = () => {
   return (
     <article className={styles.frontEnd}>
       <div className={styles.left}>
-        <h3 className={styles.heading2}>Font End</h3>
+        <h3 className={styles.heading2}>Front End</h3>
       </div>
       <div className={styles.right}>
         {frontEnd.map((x, index) => (

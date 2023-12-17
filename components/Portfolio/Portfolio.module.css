@@ -11,12 +11,11 @@
 .bottom {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-row-gap: 10rem;
+  grid-row-gap: 20rem;
 }
 
 .box {
   border: 1px solid var(--black);
-  background-color: var(--green2);
   padding: 2rem;
   border-right: none;
   display: flex;
@@ -97,7 +96,6 @@
 @media screen and (max-width: 768px) {
   .bottom {
     grid-template-columns: repeat(1, 1fr);
-    grid-row-gap: 20rem;
   }
 
   .box:nth-child(odd) {
