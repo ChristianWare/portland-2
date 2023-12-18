@@ -7,7 +7,7 @@ import FinalCta from "@/components/FinalCta/FinalCta";
 
 export const metadata: Metadata = {
   title:
-    "CHris Ware Portfolio Website",
+    "Chris Ware's Portfolio Website",
   description:
     "Welcome to my portfolio website! Feel free to reach out with further questions if you have any. I am looking forward to speaking with you soon.",
 };
