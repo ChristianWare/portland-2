@@ -1,6 +1,7 @@
 import Image from "next/image";
 import styles from "./BackEndSkills.module.css";
 import { backEnd } from "@/lib/data";
+import CircleImage from "../CircleImage/CircleImage";
 
 const BackEndSkills = () => {
   return (
@@ -20,7 +21,9 @@ const BackEndSkills = () => {
         ))}
       </div>
       <div className={styles.left}>
-        <h3 className={styles.heading2}>Back End</h3>
+        <div className={styles.circleImageContainer}>
+          <CircleImage text='Back end' />
+        </div>
       </div>
     </article>
   );

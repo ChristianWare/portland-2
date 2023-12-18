@@ -1,12 +1,15 @@
 import Image from "next/image";
 import styles from "./FrontEndSkills.module.css";
 import { frontEnd } from "@/lib/data";
+import CircleImage from "../CircleImage/CircleImage";
 
 const FrontEndSkills = () => {
   return (
     <article className={styles.frontEnd}>
       <div className={styles.left}>
-        <h3 className={styles.heading2}>Front End</h3>
+        <div className={styles.circleImageContainer}>
+          <CircleImage text='Front end' />
+        </div>
       </div>
       <div className={styles.right}>
         {frontEnd.map((x, index) => (

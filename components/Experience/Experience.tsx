@@ -5,7 +5,7 @@ import Button from "../Button/Button";
 
 const Experience = () => {
   return (
-    <section className={styles.container}>
+    <section className={styles.container} id='experience'>
       <LayoutWrapper>
         <div className={styles.content}>
           <div className={styles.left}>

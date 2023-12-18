@@ -28,10 +28,8 @@
 }
 
 .copy {
-  font-size: 2.4rem;
   color: var(--green);
   width: 90%;
-  line-height: 120%;
 }
 
 .btnContainer {
@@ -85,11 +83,11 @@
 }
 
 @media screen and (max-width: 568px) {
- .btnContainer {
-  display: grid;
-  width: 100%;
- }
- 
+  .btnContainer {
+    display: grid;
+    width: 100%;
+  }
+
   .box {
     flex-direction: column;
   }

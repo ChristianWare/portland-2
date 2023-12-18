@@ -55,6 +55,10 @@ function Nav() {
       href: "#skills",
     },
     {
+      text: "Experience",
+      href: "#experience",
+    },
+    {
       text: "Contact",
       href: "#contact",
     },

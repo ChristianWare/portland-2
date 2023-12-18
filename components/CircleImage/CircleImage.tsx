@@ -5,14 +5,16 @@ import styles from "./CircleImage.module.css";
 import { FC } from "react";
 
 interface Props {
-  src: StaticImageData;
+  src?: StaticImageData;
+  text?: string;
 }
 
-const CircleImage: FC<Props> = ({ src }) => {
+const CircleImage: FC<Props> = ({ src, text }) => {
   return (
     <div className={styles.b2}>
       <div className={styles.imgContainer}>
-        <Image src={src} alt='image' fill className={styles.img} />
+        {src && <Image src={src} alt='image' fill className={styles.img} />}
+        <div className={styles.text}>{text}</div>
       </div>
     </div>
   );

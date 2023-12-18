@@ -4,7 +4,6 @@
   justify-content: center;
   width: 100%;
   margin-bottom: 10rem;
-  /* z-index: 5000; */
 }
 
 .imgContainer {
@@ -47,4 +46,16 @@
   border-radius: 50%;
   border: 3px solid var(--green2);
   box-shadow: var(--shadow);
+}
+
+.text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+  border-radius: 50%;
+  border: 3px solid var(--green2);
+  color: var(--tan);
+  font-size: 2rem;
 }
