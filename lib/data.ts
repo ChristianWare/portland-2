@@ -94,6 +94,25 @@ export const backEnd = [
   },
 ] as const;
 
+export const experince = [
+  {
+    title: "Freelance Developer",
+    years: "2018 - Present",
+  },
+  {
+    title: "Contract Web Developer - KNI",
+    years: "JAN 2023 - AUG 2023",
+  },
+  {
+    title: "Software Engineer - Mentorworks",
+    years: "JAN 2022 - DEC 2022",
+  },
+  {
+    title: "Contract FRontend Developer - Fandem",
+    years: "MAY 2021 - Jan 2022",
+  },
+] as const;
+
 export const footer = [
   {
     id: 1,
