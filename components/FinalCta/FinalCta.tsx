@@ -3,7 +3,8 @@
 import ContactForm from "../ContactForm/ContactForm";
 import Footer from "../Footer/Footer";
 import styles from "./FinalCta.module.css";
-import Label from "../Label/Label";
+import CircleImage from "../CircleImage/CircleImage";
+import Img from "../../public/images/chris.jpeg";
 import Link from "next/link";
 
 const FinalCta = () => {
@@ -12,6 +13,9 @@ const FinalCta = () => {
       <section className={styles.container} id='contact'>
         <div className={styles.layoutWrapper}>
           <div className={styles.content}>
+            <div className={styles.circleImageContainer}>
+              <CircleImage src={Img} />
+            </div>
             <div className={styles.bottom}>
               <div className={styles.left}>
                 <h2 className={styles.heading}>Contact Me</h2>
