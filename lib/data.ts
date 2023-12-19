@@ -34,7 +34,7 @@ export const projects = [
     src: Elite,
     title: "Elite Retreat Rentals",
     description:
-      "Elite Retreat Rentals is a fictional website I built to show potential clients what a personalized booking website could look like. It allows users to view all available vacation rental properties listed by the owner, and they can make reservations on each property via the full-function booking system. Users can pay for each reservation in advance using Stripe. All are built in Next.js with Mongodb for the database and Next Auth for the authentication.",
+      "Elite Retreat Rentals is a fictional website I built to show potential clients what a personalized booking website could look like. It allows users to view all available vacation rental properties listed by the owner, and they can make reservations on each property via the full-function booking system. Users can pay for each reservation in advance using Stripe. All are built in Next.js with Mongodb for the database and Next Auth for the authentication. MERN Stack.",
     href: "https://case-study-one.vercel.app/",
     github: "https://github.com/ChristianWare/Case-Study-One",
   },
@@ -108,7 +108,7 @@ export const experince = [
     years: "JAN 2022 - DEC 2022",
   },
   {
-    title: "Contract FRontend Developer - Fandem",
+    title: "Contract Frontend Developer - Fandem",
     years: "MAY 2021 - Jan 2022",
   },
 ] as const;
