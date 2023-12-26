@@ -13,9 +13,7 @@ const FinalCta = () => {
       <section className={styles.container} id='contact'>
         <div className={styles.layoutWrapper}>
           <div className={styles.content}>
-            <div className={styles.circleImageContainer}>
-              <CircleImage src={Img} />
-            </div>
+            
             <div className={styles.bottom}>
               <div className={styles.left}>
                 <h2 className={styles.heading}>Contact Me</h2>

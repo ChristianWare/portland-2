@@ -6,6 +6,7 @@ import Chris from "../../public/images/chris.jpeg";
 import CircleImage from "../CircleImage/CircleImage";
 import Link from "next/link";
 import Time from "../Time/Time";
+import Cube from "../Cube/Cube";
 
 const Hero = () => {
   return (
@@ -19,9 +20,8 @@ const Hero = () => {
               My name is <br /> Christian Ware.
             </h1>
             <p className={styles.copy}>
-              My name is Chris Ware and I am a Web Developer. Below you will
-              find all the information you need to make an informed decision
-              about me.
+              I build semantically structured web applications by thinking
+              outside the div.
             </p>
             <div className={styles.btnContainer}>
               <Button
@@ -40,7 +40,7 @@ const Hero = () => {
           </div>
           <div className={styles.right}>
             <div className={styles.box}>
-              <CircleImage src={Chris} />
+              <Cube text='div' />
             </div>
           </div>
         </div>
