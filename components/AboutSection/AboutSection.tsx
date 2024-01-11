@@ -31,7 +31,6 @@ const AboutSection = () => {
         </div>
         <div className={styles.content}>
           <div className={styles.left}>
-            <Label text='About Me' />
             <h2 className={styles.heading}>
               I build web applications with Next. JS and React
             </h2>

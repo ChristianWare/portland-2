@@ -70,7 +70,7 @@ function Nav() {
       <nav className={styles.navbar}>
         <div className={styles.logo}>
           <Link href='/' className={styles.logo}>
-            CW
+            Chris Ware
           </Link>
         </div>
         <ul
