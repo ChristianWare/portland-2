@@ -1,6 +1,7 @@
 import Button from "../Button/Button";
 import Label from "../Label/Label";
 import LayoutWrapper from "../LayoutWrapper";
+import RectangleText from "../RectangleText/RectangleText";
 import styles from "./AboutSection.module.css";
 
 const AboutSection = () => {
@@ -25,6 +26,9 @@ const AboutSection = () => {
   return (
     <section className={styles.container} id='about'>
       <LayoutWrapper>
+        <div className={styles.reqContainer}>
+          <RectangleText text='About Me' />
+        </div>
         <div className={styles.content}>
           <div className={styles.left}>
             <Label text='About Me' />
@@ -38,7 +42,11 @@ const AboutSection = () => {
               them to action.
             </p>
             <div className={styles.btnContainer}>
-              <Button href='#contact' text='Contact Me' btnType='primary' />
+              <Button
+                href='#projects'
+                text='Recent Projects'
+                btnType='primary'
+              />
             </div>
           </div>
           <div className={styles.right}>

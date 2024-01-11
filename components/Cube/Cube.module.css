@@ -16,7 +16,6 @@
   border-left: none;
   padding-left: 0px;
   font-size: 5rem;
-  hyphens: auto;
 }
 
 .cube div {
@@ -29,6 +28,7 @@
     text-align: center;
     line-height: 200px;
     color: var(--tan);
+    transition: all 0.2s ease-in;
 }
 
 .front {

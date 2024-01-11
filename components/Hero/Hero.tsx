@@ -2,8 +2,6 @@ import Button from "../Button/Button";
 import LayoutWrapper from "../LayoutWrapper";
 import Nav from "../Nav/Nav";
 import styles from "./Hero.module.css";
-import Chris from "../../public/images/chris.jpeg";
-import CircleImage from "../CircleImage/CircleImage";
 import Link from "next/link";
 import Time from "../Time/Time";
 import Cube from "../Cube/Cube";
@@ -16,7 +14,7 @@ const Hero = () => {
         <div className={styles.content}>
           <div className={styles.left}>
             <h1 className={styles.heading}>
-              Hi Recruiters. <br />
+              Hello World. <br />
               My name is <br /> Christian Ware.
             </h1>
             <p className={styles.copy}>
@@ -33,8 +31,8 @@ const Hero = () => {
               />
               <Button
                 btnType='secondary'
-                text='My Previous Work'
-                href='#projects'
+                text='About Me'
+                href='#about'
               />
             </div>
           </div>
