@@ -66,7 +66,6 @@ function Nav() {
 
   return (
     <header className={styles.header}>
-      <div className={styles.navbarBackground}></div>
       <nav className={styles.navbar}>
         <div className={styles.logo}>
           <Link href='/' className={styles.logo}>

@@ -9,7 +9,7 @@ import Cube from "../Cube/Cube";
 const Hero = () => {
   return (
     <section className={styles.container} id='home'>
-      <Nav />
+      {/* <Nav /> */}
       <LayoutWrapper>
         <div className={styles.content}>
           <div className={styles.left}>

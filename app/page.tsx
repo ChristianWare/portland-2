@@ -6,7 +6,7 @@ import Skills from "@/components/Skills/Skills";
 import FinalCta from "@/components/FinalCta/FinalCta";
 import Experience from "@/components/Experience/Experience";
 import ScrollText from "@/components/ScrollText/ScrollText";
-
+import Nav from "@/components/Nav/Nav";
 
 export const metadata: Metadata = {
   title: "Chris Ware's Portfolio Website",
@@ -17,6 +17,7 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <>
+      <Nav />
       <Hero />
       <ScrollText />
       <AboutSection />
