@@ -14,7 +14,7 @@ const Hero = () => {
         <div className={styles.content}>
           <div className={styles.left}>
             <h1 className={styles.heading}>
-              Hello World, <br />
+              Hello World <br />
               My name is <br /> Christian Ware
             </h1>
             <p className={styles.copy}>
