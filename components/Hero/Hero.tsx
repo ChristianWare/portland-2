@@ -1,18 +1,26 @@
+"use client";
+
 import Button from "../Button/Button";
 import LayoutWrapper from "../LayoutWrapper";
-import Nav from "../Nav/Nav";
 import styles from "./Hero.module.css";
 import Link from "next/link";
 import Time from "../Time/Time";
 import Cube from "../Cube/Cube";
+import { motion } from "framer-motion";
+import { fadeIn } from "@/animation/variants";
 
 const Hero = () => {
   return (
     <section className={styles.container} id='home'>
-      {/* <Nav /> */}
       <LayoutWrapper>
         <div className={styles.content}>
-          <div className={styles.left}>
+          <motion.div
+            variants={fadeIn("up", 0.3)}
+            initial='hidden'
+            whileInView={"show"}
+            viewport={{ once: false, amount: 0.3 }}
+            className={styles.left}
+          >
             <h1 className={styles.heading}>
               Hello World <br />
               My name is <br /> Christian Ware
@@ -29,13 +37,9 @@ const Hero = () => {
                 target='_blank'
                 download={true}
               />
-              <Button
-                btnType='secondary'
-                text='About Me'
-                href='#about'
-              />
+              <Button btnType='secondary' text='About Me' href='#about' />
             </div>
-          </div>
+          </motion.div>
           <div className={styles.right}>
             <div className={styles.box}>
               <Cube text='div' />

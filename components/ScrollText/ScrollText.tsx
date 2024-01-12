@@ -30,7 +30,7 @@ const ScrollText = () => {
     const anim = gsap.to(lettersRef.current, {
       scrollTrigger: {
         trigger: triggerRef.current,
-        scrub: true,
+        scrub: 0.90,
         start: "top center",
         end: "bottom 85%",
       },

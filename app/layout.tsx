@@ -4,6 +4,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import NoiseBg from "@/components/NoiseBg/NoiseBg";
 
+
 const inter = Inter({ subsets: ["latin"] });
 
 const messina = localFont({
@@ -33,9 +34,7 @@ export default function RootLayout({
       <body
         className={`${inter.className} ${messinaCondensed.variable} ${messina.variable}`}
       >
-        <NoiseBg>
-          {children}
-          </NoiseBg>
+          <NoiseBg>{children}</NoiseBg>
       </body>
     </html>
   );
