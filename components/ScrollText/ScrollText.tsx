@@ -18,7 +18,6 @@ const ScrollText = () => {
     return [lettersRef, (ref) => ref && lettersRef.current.push(ref)];
   }
 
-
   const triggerRef = useRef(null);
 
   gsap.registerPlugin(ScrollTrigger);
@@ -30,7 +29,7 @@ const ScrollText = () => {
     const anim = gsap.to(lettersRef.current, {
       scrollTrigger: {
         trigger: triggerRef.current,
-        scrub: 0.90,
+        scrub: 0.9,
         start: "top center",
         end: "bottom 85%",
       },
@@ -44,20 +43,22 @@ const ScrollText = () => {
   }, [lettersRef]);
 
   return (
-    <div className={styles.reveal}>
+    <div className={styles.bgColor}>
       <LayoutWrapper>
-        <div ref={triggerRef}>
-          <h2 className={styles.text}>
-            {text.split("").map((letter, index) => (
-              <span
-                key={index}
-                className={styles.revealText}
-                ref={setLettersRef}
-              >
-                {letter}
-              </span>
-            ))}
-          </h2>
+        <div className={styles.reveal}>
+          <div ref={triggerRef}>
+            <h2 className={styles.text}>
+              {text.split("").map((letter, index) => (
+                <span
+                  key={index}
+                  className={styles.revealText}
+                  ref={setLettersRef}
+                >
+                  {letter}
+                </span>
+              ))}
+            </h2>
+          </div>
         </div>
       </LayoutWrapper>
     </div>

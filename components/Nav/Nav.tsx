@@ -40,7 +40,7 @@ function Nav() {
   const navItems = [
     {
       text: "Home",
-      href: "#home",
+      href: "/",
     },
     {
       text: "About",

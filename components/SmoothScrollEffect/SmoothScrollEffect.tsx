@@ -5,9 +5,6 @@ import { useScroll, useSpring, useTransform } from "framer-motion";
 import { motion } from "framer-motion";
 
 const SmoothScrollEffect = ({ children }: { children: React.ReactNode }) => {
-
-  const [isLoading, setIsLoading] = useState(true)
-
   const contentRef = useRef<HTMLDivElement>(null);
   const [contentHeight, setContentHeight] = useState(0);
   const [windowHeight, setWindowHeight] = useState(0);
