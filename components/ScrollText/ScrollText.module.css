@@ -1,6 +1,5 @@
 .reveal {
-  /* padding-left: 30%; */
-  /* padding-right: 10%; */
+  padding-left: 30%;
   background-color: var(--tan);
 }
 
@@ -15,4 +14,11 @@
 .revealText {
   color: var(--tan);
   filter: drop-shadow(0 0 0.06rem rgb(41, 95, 78));
+}
+
+
+@media screen and (max-width: 968px) {
+  .reveal {
+    padding-left: 0px;
+  }
 }
