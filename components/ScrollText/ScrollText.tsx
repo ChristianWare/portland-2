@@ -24,7 +24,7 @@ const ScrollText = () => {
   gsap.registerPlugin(ScrollTrigger);
 
   const text =
-    "BECAUSE OF MY BACKGROUND IN DESIGN, AND FINANCE, I UNDERSTAND THE AESTHETIC AND BUSINESS SIDE TO ANY PROJECT. WHILE WEBSITES HAVE TO MAKE GOOD IMPRESSIONS ON THEIR VISITORS, THEY SHOULD ALSO MOTIVATE THEM TO ACTION.";
+    "As a creative developer, I find myself positioned between the realms of design and software engineering. I am not solely a software engineer, nor am I purely an artist. My satisfaction comes from the combination of these two disciplines, blending form and function seamlessly.";
 
   useEffect(() => {
     const anim = gsap.to(lettersRef.current, {
@@ -34,20 +34,20 @@ const ScrollText = () => {
         start: "top center",
         end: "bottom 85%",
       },
-      color: "#2A2A2A",
+      color: "#295f4e",
       duration: 5,
       stagger: 1,
     });
     return () => {
       anim.kill();
     };
-  }, []);
+  }, [lettersRef]);
 
   return (
     <div className={styles.reveal}>
       <LayoutWrapper>
         <div ref={triggerRef}>
-          <h1>
+          <h2 className={styles.text}>
             {text.split("").map((letter, index) => (
               <span
                 key={index}
@@ -57,7 +57,7 @@ const ScrollText = () => {
                 {letter}
               </span>
             ))}
-          </h1>
+          </h2>
         </div>
       </LayoutWrapper>
     </div>

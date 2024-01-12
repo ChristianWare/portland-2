@@ -1,9 +1,18 @@
 .reveal {
-    padding-left: 30%;
-    padding-right: 10%;
+  /* padding-left: 30%; */
+  /* padding-right: 10%; */
+  background-color: var(--tan);
+}
+
+.text {
+    /* text-align: center; */
+    /* font-size: 10rem; */
+  line-height: 90%;
+  text-transform: uppercase;
+  letter-spacing: -3px;
 }
 
 .revealText {
-    color: var(--white);
-    filter: drop-shadow(0 0 0.06rem rgb(2, 2, 2));
+  color: var(--tan);
+  filter: drop-shadow(0 0 0.06rem rgb(41, 95, 78));
 }

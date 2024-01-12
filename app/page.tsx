@@ -18,9 +18,9 @@ export default function Home() {
   return (
     <>
       <Hero />
+      <ScrollText />
       <AboutSection />
       <Portfolio />
-      <ScrollText />
       <Skills />
       <Experience />
       <FinalCta />

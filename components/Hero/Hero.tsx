@@ -14,8 +14,8 @@ const Hero = () => {
         <div className={styles.content}>
           <div className={styles.left}>
             <h1 className={styles.heading}>
-              Hello World. <br />
-              My name is <br /> Christian Ware.
+              Hello World, <br />
+              My name is <br /> Christian Ware
             </h1>
             <p className={styles.copy}>
               I build semantically structured web applications by thinking
@@ -24,7 +24,7 @@ const Hero = () => {
             <div className={styles.btnContainer}>
               <Button
                 btnType='primary'
-                text='Download My Resume >'
+                text='My Resume >'
                 href='/ChrisWareResume2024.pdf'
                 target='_blank'
                 download={true}
