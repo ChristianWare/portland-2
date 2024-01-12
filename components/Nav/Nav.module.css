@@ -16,19 +16,6 @@
   border-bottom: 1px solid var(--tan);
 }
 
-/* .navbar::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  opacity: 0.03;
-  pointer-events: none;
-  background: url(../../public/images/noise.gif);
-  z-index: -1;
-} */
-
 .navBarLeft {
   display: flex;
   align-items: center;

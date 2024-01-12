@@ -1,8 +1,11 @@
+"use client";
+
+import { fadeIn } from "@/animation/variants";
 import Button from "../Button/Button";
-import Label from "../Label/Label";
 import LayoutWrapper from "../LayoutWrapper";
 import RectangleText from "../RectangleText/RectangleText";
 import styles from "./AboutSection.module.css";
+import { motion } from "framer-motion";
 
 const AboutSection = () => {
   const value = [
@@ -30,7 +33,13 @@ const AboutSection = () => {
           <RectangleText text='About Me' />
         </div>
         <div className={styles.content}>
-          <div className={styles.left}>
+          <motion.div
+            variants={fadeIn("right", 0.3)}
+            initial='hidden'
+            whileInView={"show"}
+            viewport={{ once: false, amount: 0.3 }}
+            className={styles.left}
+          >
             <h2 className={styles.heading}>
               I build web applications with Next. JS and React
             </h2>
@@ -47,8 +56,14 @@ const AboutSection = () => {
                 btnType='primary'
               />
             </div>
-          </div>
-          <div className={styles.right}>
+          </motion.div>
+          <motion.div
+            variants={fadeIn("left", 0.3)}
+            initial='hidden'
+            whileInView={"show"}
+            viewport={{ once: false, amount: 0.3 }}
+            className={styles.right}
+          >
             <h3 className={styles.heading2}>My Specialties:</h3>
             <div className={styles.mapContainer}>
               {value.map((x, index) => (
@@ -58,7 +73,7 @@ const AboutSection = () => {
                 </div>
               ))}
             </div>
-          </div>
+          </motion.div>
         </div>
       </LayoutWrapper>
     </section>
