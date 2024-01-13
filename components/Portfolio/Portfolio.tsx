@@ -50,7 +50,7 @@ const Portfolio = () => {
                       />
                       <Button
                         btnType='secondary'
-                        href={x.href}
+                        href={x.github}
                         text='Github'
                         target='_blank'
                       />
