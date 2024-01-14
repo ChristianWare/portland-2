@@ -14,22 +14,34 @@ const Hero = () => {
     <section className={styles.container} id='home'>
       <LayoutWrapper>
         <div className={styles.content}>
-          <motion.div
-            variants={fadeIn("up", 0.3)}
-            initial='hidden'
-            whileInView={"show"}
-            viewport={{ once: false, amount: 0.3 }}
-            className={styles.left}
-          >
-            <h1 className={styles.heading}>
+          <div className={styles.left}>
+            <motion.h1
+              variants={fadeIn("down", 0.3)}
+              initial='hidden'
+              whileInView={"show"}
+              viewport={{ once: false, amount: 0.3 }}
+              className={styles.heading}
+            >
               Hello World <br />
               My name is <br /> Christian Ware
-            </h1>
-            <p className={styles.copy}>
+            </motion.h1>
+            <motion.p
+              variants={fadeIn("down", 0.6)}
+              initial='hidden'
+              whileInView={"show"}
+              viewport={{ once: false, amount: 0. }}
+              className={styles.copy}
+            >
               I build semantically structured web applications by thinking
               outside the div.
-            </p>
-            <div className={styles.btnContainer}>
+            </motion.p>
+            <motion.div
+              variants={fadeIn("down", 0.9)}
+              initial='hidden'
+              whileInView={"show"}
+              viewport={{ once: false, amount: 0.9 }}
+              className={styles.btnContainer}
+            >
               <Button
                 btnType='primary'
                 text='My Resume >'
@@ -38,15 +50,27 @@ const Hero = () => {
                 download={true}
               />
               <Button btnType='secondary' text='About Me' href='#about' />
-            </div>
-          </motion.div>
-          <div className={styles.right}>
+            </motion.div>
+          </div>
+          <motion.div
+            variants={fadeIn("down", 0.3)}
+            initial='hidden'
+            whileInView={"show"}
+            viewport={{ once: false, amount: 0.3 }}
+            className={styles.right}
+          >
             <div className={styles.box}>
               <Cube text='div' />
             </div>
-          </div>
+          </motion.div>
         </div>
-        <div className={styles.bottom}>
+        <motion.div
+          variants={fadeIn("down", 0.5)}
+          initial='hidden'
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.3 }}
+          className={styles.bottom}
+        >
           <Time />
           <Link
             href='https://www.linkedin.com/in/christian-ware/'
@@ -62,13 +86,12 @@ const Hero = () => {
           >
             Git Hub
           </Link>
-        </div>
+        </motion.div>
       </LayoutWrapper>
     </section>
   );
 };
 export default Hero;
-
 
 export const fadeInLetters = (delay: number) => {
   return {
