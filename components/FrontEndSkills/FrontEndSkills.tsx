@@ -1,7 +1,11 @@
+"use client";
+
 import Image from "next/image";
 import styles from "./FrontEndSkills.module.css";
 import { frontEnd } from "@/lib/data";
 import CircleImage from "../CircleImage/CircleImage";
+import { motion } from "framer-motion";
+import { fadeIn } from "@/animation/variants";
 
 const FrontEndSkills = () => {
   return (
@@ -13,7 +17,14 @@ const FrontEndSkills = () => {
       </div>
       <div className={styles.right}>
         {frontEnd.map((x, index) => (
-          <div key={index} className={styles.box}>
+          <motion.div
+            variants={fadeIn(index % 2 === 0 ? "up" : "left", 0.3)}
+            initial='hidden'
+            whileInView={"show"}
+            viewport={{ once: false, amount: 0.3 }}
+            key={index}
+            className={styles.box}
+          >
             <Image
               src={x.icon}
               alt={x.name}
@@ -22,7 +33,7 @@ const FrontEndSkills = () => {
               className={styles.img}
             />
             <h4 className={styles.name}>{x.name}</h4>
-          </div>
+          </motion.div>
         ))}
       </div>
     </article>

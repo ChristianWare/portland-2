@@ -6,8 +6,8 @@ import styles from "./Portfolio.module.css";
 import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import Button from "../Button/Button";
 import { fadeIn } from "@/animation/variants";
+import Button from "../Button/Button";
 import Cube from "../Cube/Cube";
 import ContentPadding from "../ContentPadding/ContentPadding";
 

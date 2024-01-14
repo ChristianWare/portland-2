@@ -1,7 +1,11 @@
+"use client";
+
 import { experince } from "@/lib/data";
 import LayoutWrapper from "../LayoutWrapper";
 import styles from "./Experience.module.css";
 import Button from "../Button/Button";
+import { motion } from "framer-motion";
+import { fadeIn } from "@/animation/variants";
 
 const Experience = () => {
   return (
@@ -22,8 +26,24 @@ const Experience = () => {
           <div className={styles.right}>
             {experince.map((x, index) => (
               <div key={index} className={styles.box}>
-                <h3 className={styles.title}>{x.title}</h3>
-                <p className={styles.years}>{x.years}</p>
+                <motion.h3
+                  variants={fadeIn("right", 0.3)}
+                  initial='hidden'
+                  whileInView={"show"}
+                  viewport={{ once: false, amount: 0.3 }}
+                  className={styles.title}
+                >
+                  {x.title}
+                </motion.h3>
+                <motion.p
+                  variants={fadeIn("left", 0.3)}
+                  initial='hidden'
+                  whileInView={"show"}
+                  viewport={{ once: false, amount: 0.3 }}
+                  className={styles.years}
+                >
+                  {x.years}
+                </motion.p>
               </div>
             ))}
             <div className={styles.btnContainer}>
