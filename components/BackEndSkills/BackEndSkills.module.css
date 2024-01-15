@@ -27,7 +27,8 @@
 }
 
 .box {
-  border: 1px solid var(--tan);
+  background-color: var(--tan);
+  border-radius: 8px;
   padding: 2rem;
   padding-top: 3rem;
   display: flex;
@@ -38,7 +39,7 @@
 }
 
 .name {
-  color: var(--tan);
+  color: var(--green);
   font-family: var(--messina);
 }
 
