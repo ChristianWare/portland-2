@@ -21,7 +21,7 @@
 
 .img {
   object-fit: cover;
-  border: 1px solid var(--green);
+  border: 1px solid var(--blue);
   transition: all 0.2s ease-in;
   cursor: pointer;
 }

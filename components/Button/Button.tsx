@@ -3,10 +3,18 @@
 import { FC } from "react";
 import Link from "next/link";
 import { ButtonProps } from "@/lib/interface";
+import Arrow from "../../public/icons/arrow2.svg";
 
 import styles from "./Button.module.css";
 
-const Button: FC<ButtonProps> = ({ href = "", text, btnType, target = "", download }) => {
+const Button: FC<ButtonProps> = ({
+  href = "",
+  text,
+  btnType,
+  target = "",
+  download,
+  arrow,
+}) => {
   return (
     <button className={styles.container}>
       <Link
@@ -16,6 +24,7 @@ const Button: FC<ButtonProps> = ({ href = "", text, btnType, target = "", downlo
         download={download}
       >
         {text}
+        {arrow && <Arrow className={styles.icon} />}
       </Link>
     </button>
   );

@@ -45,10 +45,11 @@ const Hero = () => {
             >
               <Button
                 btnType='primary'
-                text='My Resume >'
+                text='Download My Resume'
                 href='/ChrisWareResume2024.pdf'
                 target='_blank'
                 download={true}
+                arrow
               />
               {/* <Button btnType='secondary' text='About Me' href='#about' /> */}
             </motion.div>
