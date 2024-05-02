@@ -21,11 +21,16 @@
 
 .heading {
   color: var(--blue);
+  line-height: 110%;
 }
 
 .heading span {
   color: var(--blue);
   white-space: nowrap;
+  font-size: 7rem;
+  line-height: 110%;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 .copy {

@@ -41,7 +41,8 @@ const AboutSection = () => {
             className={styles.left}
           >
             <h2 className={styles.heading}>
-              I build web applications with NextJS and React
+              <span>• I</span> build web applications with NextJS and{" "}
+              <span>React •</span>
             </h2>
             <p className={styles.copy}>
               Because of my background in design, and finance, I understand the

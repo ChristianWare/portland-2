@@ -37,6 +37,11 @@
   letter-spacing: 1px;
 }
 
+.heading span {
+  white-space: nowrap;
+  color: var(--green);
+}
+
 .copy {
   color: var(--green);
   width: 90%;

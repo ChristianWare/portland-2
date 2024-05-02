@@ -9,6 +9,8 @@ import { fadeIn } from "@/animation/variants";
 import Button from "../Button/Button";
 import Cube from "../Cube/Cube";
 import ContentPadding from "../ContentPadding/ContentPadding";
+import Slider from "../Slider/Slider";
+import Carousel from "../Carousel/Carousel";
 
 const Portfolio = () => {
   return (
@@ -59,6 +61,10 @@ const Portfolio = () => {
               </div>
             </motion.div>
           ))}
+
+          <div className={styles.sliderArea}>
+            {/* <Carousel /> */}
+          </div>
         </ContentPadding>
       </LayoutWrapper>
     </section>
