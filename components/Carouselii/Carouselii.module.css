@@ -40,12 +40,12 @@
 
 .icon1,
 .icon2 {
-  color: var(--tan);
+  color: var(--blue);
   width: 30px;
   height: 30px;
   background-color: var(--green2);
   border-radius: 50%;
-  border: 1px solid var(--green);
+  border: 1px solid var(--blue);
   padding: 5px;
   position: relative;
   cursor: pointer;

@@ -18,13 +18,14 @@
 }
 
 .heading {
-  color: var(--green);
+  color: var(--blue);
 }
 
 .copy {
-  font-size: 2.4rem;
-  color: var(--green);
-  width: 60%;
+  font-size: 2rem;
+  color: var(--blue);
+  width: 70%;
+  /* font-weight: 500; */
 }
 
 .btnContainer {

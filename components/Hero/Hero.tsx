@@ -10,7 +10,6 @@ import { motion } from "framer-motion";
 import { fadeIn } from "@/animation/variants";
 import Carouselii from "../Carouselii/Carouselii";
 
-
 const Hero = () => {
   return (
     <section className={styles.container} id='home'>
@@ -51,7 +50,7 @@ const Hero = () => {
                 target='_blank'
                 download={true}
               />
-              <Button btnType='secondary' text='About Me' href='#about' />
+              {/* <Button btnType='secondary' text='About Me' href='#about' /> */}
             </motion.div>
           </div>
           <motion.div

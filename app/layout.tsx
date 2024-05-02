@@ -4,7 +4,6 @@ import localFont from "next/font/local";
 import "./globals.css";
 import NoiseBg from "@/components/NoiseBg/NoiseBg";
 
-
 const inter = Inter({ subsets: ["latin"] });
 
 const messina = localFont({
@@ -16,6 +15,12 @@ const messina = localFont({
 const messinaCondensed = localFont({
   src: "../public/fonts/MessinaCondensed.ttf",
   variable: "--messinaCondensed",
+  display: "swap",
+});
+
+const dashing = localFont({
+  src: "../public/fonts/Dashing.otf",
+  variable: "--dashing",
   display: "swap",
 });
 
@@ -32,9 +37,9 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body
-        className={`${inter.className} ${messinaCondensed.variable} ${messina.variable}`}
+        className={`${inter.className} ${messinaCondensed.variable} ${messina.variable} ${dashing.variable}`}
       >
-          <NoiseBg>{children}</NoiseBg>
+        <NoiseBg>{children}</NoiseBg>
       </body>
     </html>
   );

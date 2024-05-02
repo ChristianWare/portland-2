@@ -91,14 +91,10 @@ function Nav() {
             </li>
           ))}
           <div className={styles.btnContainer}>
-            <Button
-              href='tel:+6236326780'
-              text='623-632-6780'
-              btnType='navBtn'
-            />
+            <Button href='tel:+6236326780' text='Call' btnType='navBtn' />
             <Button
               href='maito:chris.ware.dev@gmail.com'
-              text='chris.ware.dev@gmail.com'
+              text='chris'
               btnType='navBtnii'
             />
           </div>
