@@ -14,6 +14,7 @@ const Button: FC<ButtonProps> = ({
   target = "",
   download,
   arrow,
+  iconColor = "",
 }) => {
   return (
     <button className={styles.container}>
@@ -24,7 +25,7 @@ const Button: FC<ButtonProps> = ({
         download={download}
       >
         {text}
-        {arrow && <Arrow className={styles.icon} />}
+        {arrow && <Arrow className={`${styles.icon} ${styles[iconColor]}`} />}
       </Link>
     </button>
   );

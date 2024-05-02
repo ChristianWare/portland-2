@@ -8,6 +8,7 @@ export interface ButtonProps {
   target?: string;
   download?: boolean;
   arrow?: boolean;
+  iconColor?: string;
 }
 
 export interface ImageGridProps {

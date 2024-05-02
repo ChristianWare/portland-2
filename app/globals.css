@@ -50,8 +50,7 @@ h6,
 span {
   font-family: var(--dashing);
   color: var(--black);
-  /* hyphens: auto; */
-  text-transform: uppercase;
+  hyphens: auto;
 }
 
 h1 {

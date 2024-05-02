@@ -60,18 +60,22 @@
 }
 
 .navBtn {
-  padding: 15px 44px;
-  background-color: var(--green2);
-  border: 1px solid var(--green2);
-  color: var(--black);
+  background-color: var(--tan);
+  border: 1px solid var(--blue);
+  color: var(--blue);
+  padding: 5px 25px;
+  padding-top: 8px;
+}
+
+.navBtn:hover {
+  background-color: var(--green);
 }
 
 .navBtnii {
-  text-transform: none;
-  padding: 15px 44px;
   background-color: var(--green);
   border: 1px solid var(--green2);
-  color: var(--green2);
+  color: var(--tan);
+  padding: 5px 25px;
 }
 
 .learnMore {
@@ -94,7 +98,19 @@
   height: 27px;
 }
 
+.tan {
+  color: var(--tan);
+}
+
+.blue {
+  color: var(--blue);
+}
+
 .primary:hover .icon {
+  color: var(--blue);
+}
+
+.navBtn:hover .tan {
   color: var(--blue);
 }
 

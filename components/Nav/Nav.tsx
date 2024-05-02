@@ -4,6 +4,7 @@ import styles from "./Nav.module.css";
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import Button from "../Button/Button";
+import Code from "../../public/icons/code.svg";
 
 function Nav() {
   const [isOpen, setIsOpen] = useState(false);
@@ -39,10 +40,6 @@ function Nav() {
 
   const navItems = [
     {
-      text: "Home",
-      href: "/",
-    },
-    {
       text: "About",
       href: "#about",
     },
@@ -67,7 +64,8 @@ function Nav() {
   return (
     <header className={styles.header}>
       <nav className={styles.navbar}>
-        <div className={styles.logo}>
+        <div className={styles.logoBox}>
+          <Code className={styles.logoIcon} width={40} height={40} />
           <Link href='/' className={styles.logo}>
             Chris Ware
           </Link>
@@ -91,11 +89,14 @@ function Nav() {
             </li>
           ))}
           <div className={styles.btnContainer}>
-            <Button href='tel:+6236326780' text='Call' btnType='navBtn' />
             <Button
-              href='maito:chris.ware.dev@gmail.com'
-              text='chris'
-              btnType='navBtnii'
+              btnType='navBtn'
+              text='Download My Resume'
+              href='/ChrisWareResume2024.pdf'
+              target='_blank'
+              download={true}
+              arrow
+              iconColor='blue'
             />
           </div>
         </ul>
