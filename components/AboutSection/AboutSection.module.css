@@ -84,6 +84,24 @@
   flex: 2;
 }
 
+.imgContainer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 500px;
+  height: 500px;
+  object-fit: contain;
+}
+
+.svgLogo {
+  color: purple;
+  width: 500px;
+  height: 500px;
+}
+
 @media screen and (max-width: 968px) {
   .content {
     flex-direction: column;

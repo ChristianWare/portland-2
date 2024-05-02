@@ -6,6 +6,11 @@ import LayoutWrapper from "../LayoutWrapper";
 import RectangleText from "../RectangleText/RectangleText";
 import styles from "./AboutSection.module.css";
 import { motion } from "framer-motion";
+import Image from "next/image";
+import Woman from "../../public/icons/Layer 5.png";
+import Womanii from "../../public/icons/lookladyagain.svg";
+import Ladyii from "../../public/icons/ladyii.svg";
+import Me from "../../public/icons/me.svg";
 
 const AboutSection = () => {
   const value = [
@@ -76,6 +81,18 @@ const AboutSection = () => {
           </motion.div>
         </div>
       </LayoutWrapper>
+      {/* <div className={styles.imgContainer}>
+        <Image src={Woman} alt='woman' fill className={styles.img} />
+      </div>
+      <div className={styles.imgContainer}>
+        <Womanii className={styles.svgLogo} />
+      </div>
+      <div className={styles.imgContainer}>
+        <Ladyii className={styles.svgLogo} />
+      </div>
+      <div className={styles.imgContainer}>
+        <Me className={styles.svgLogo} />
+      </div> */}
     </section>
   );
 };

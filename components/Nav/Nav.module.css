@@ -1,5 +1,5 @@
 .header {
-  background-color: var(--green);  
+  background-color: var(--tan);  
 }
 
 .navbar {
@@ -11,9 +11,9 @@
   justify-content: space-between;
   width: 100%;
   padding: 2rem 3rem;
-  background-color: var(--green);
+  background-color: var(--tan);
   z-index: 1000;
-  border-bottom: 1px solid var(--tan);
+  border-bottom: 1px solid var(--green);
 }
 
 .navBarLeft {
@@ -25,7 +25,7 @@
 
 .logo {
   font-size: 2.6rem;
-  color: var(--tan);
+  color: var(--green);
   text-transform: uppercase;
   z-index: 998;
 }
@@ -60,7 +60,7 @@
   font-size: 1.4rem;
   text-transform: uppercase;
   font-family: var(--messinaCondensed);
-  color: var(--tan);
+  color: var(--green);
   user-select: none;
   scroll-behavior: smooth;
   z-index: 998;

@@ -8,6 +8,8 @@ import Time from "../Time/Time";
 import Cube from "../Cube/Cube";
 import { motion } from "framer-motion";
 import { fadeIn } from "@/animation/variants";
+import Carouselii from "../Carouselii/Carouselii";
+
 
 const Hero = () => {
   return (
@@ -29,7 +31,7 @@ const Hero = () => {
               variants={fadeIn("down", 0.6)}
               initial='hidden'
               whileInView={"show"}
-              viewport={{ once: false, amount: 0. }}
+              viewport={{ once: false, amount: 0 }}
               className={styles.copy}
             >
               I build semantically structured web applications by thinking
@@ -60,7 +62,7 @@ const Hero = () => {
             className={styles.right}
           >
             <div className={styles.box}>
-              <Cube text='div' />
+              <Carouselii />
             </div>
           </motion.div>
         </div>
@@ -92,17 +94,3 @@ const Hero = () => {
   );
 };
 export default Hero;
-
-export const fadeInLetters = (delay: number) => {
-  return {
-    hidden: {
-      opacity: 0,
-    },
-    show: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.1, // Add a delay between each letter
-      },
-    },
-  };
-};
