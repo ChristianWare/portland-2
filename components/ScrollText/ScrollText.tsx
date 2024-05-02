@@ -3,6 +3,7 @@ import { useEffect, useRef } from "react";
 
 import styles from "./ScrollText.module.css";
 import LayoutWrapper from "../LayoutWrapper";
+import Me from "../../public/icons/me.svg";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/all";
 
@@ -23,7 +24,7 @@ const ScrollText = () => {
   gsap.registerPlugin(ScrollTrigger);
 
   const text =
-    "•I'm a creative developer who enjoys blending design with software engineering•";
+    "• I'm a creative developer who enjoys blending design with software engineering •";
 
   useEffect(() => {
     const anim = gsap.to(lettersRef.current, {
@@ -60,6 +61,9 @@ const ScrollText = () => {
             </h2>
           </div>
         </div>
+        {/* <div className={styles.bottom}>
+          <Me width={300} height={300} className={styles.me} />
+        </div> */}
       </LayoutWrapper>
     </div>
   );

@@ -24,8 +24,8 @@ const Hero = () => {
               // viewport={{ once: false, amount: 0.3 }}
               className={styles.heading}
             >
-              Hello World <br />
-              My name is <br /> Christian Ware
+              <span> • Hello</span> World <br />
+              My name is <br /> Christian <span> Ware •</span>
             </h1>
             <p className={styles.copy}>
               I build semantically structured web applications by thinking

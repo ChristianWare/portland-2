@@ -6,16 +6,11 @@ import LayoutWrapper from "../LayoutWrapper";
 import RectangleText from "../RectangleText/RectangleText";
 import styles from "./AboutSection.module.css";
 import { motion } from "framer-motion";
-import Image from "next/image";
-import Woman from "../../public/icons/Layer 5.png";
-import Womanii from "../../public/icons/lookladyagain.svg";
-import Ladyii from "../../public/icons/ladyii.svg";
-import Me from "../../public/icons/me.svg";
 
 const AboutSection = () => {
   const value = [
     {
-      heading: "Full-Stack Proficiency",
+      heading: "Full-Stack Development",
       value:
         "I am skilled in both front-end and back-end development, and I have the ability to create comprehensive web applications from start to finish. My tools of choice are Next.js/React.",
     },
@@ -46,7 +41,7 @@ const AboutSection = () => {
             className={styles.left}
           >
             <h2 className={styles.heading}>
-              I build web applications with Next. JS and React
+              I build web applications with NextJS and React
             </h2>
             <p className={styles.copy}>
               Because of my background in design, and finance, I understand the
@@ -62,23 +57,41 @@ const AboutSection = () => {
               />
             </div>
           </motion.div>
-          <motion.div
-            variants={fadeIn("left", 0.3)}
-            initial='hidden'
-            whileInView={"show"}
-            viewport={{ once: false, amount: 0.3 }}
-            className={styles.right}
-          >
-            <h3 className={styles.heading2}>My Specialties:</h3>
+          <div className={styles.right}>
+            <motion.h3
+              variants={fadeIn("left", 0.3)}
+              initial='hidden'
+              whileInView={"show"}
+              viewport={{ once: false, amount: 0.3 }}
+              className={styles.heading2}
+            >
+              What I&apos;m Good At
+            </motion.h3>
             <div className={styles.mapContainer}>
               {value.map((x, index) => (
                 <div key={index} className={styles.box}>
-                  <h4 className={styles.valueHeading}>{x.heading}</h4>
-                  <p className={styles.value}>{x.value}</p>
+                  <motion.h4
+                    variants={fadeIn("left", 0.3)}
+                    initial='hidden'
+                    whileInView={"show"}
+                    viewport={{ once: false, amount: 0.3 }}
+                    className={styles.valueHeading}
+                  >
+                    {x.heading}
+                  </motion.h4>
+                  <motion.p
+                    variants={fadeIn("left", 0.3)}
+                    initial='hidden'
+                    whileInView={"show"}
+                    viewport={{ once: false, amount: 0.3 }}
+                    className={styles.value}
+                  >
+                    {x.value}
+                  </motion.p>
                 </div>
               ))}
             </div>
-          </motion.div>
+          </div>
         </div>
       </LayoutWrapper>
       {/* <div className={styles.imgContainer}>

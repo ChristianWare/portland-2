@@ -23,6 +23,11 @@
   color: var(--blue);
 }
 
+.heading span {
+  color: var(--blue);
+  white-space: nowrap;
+}
+
 .copy {
   font-size: 2rem;
   color: var(--blue);

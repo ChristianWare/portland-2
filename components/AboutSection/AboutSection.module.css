@@ -1,5 +1,6 @@
 .container {
   background-color: var(--tan);
+  padding-top: 5rem;
 }
 
 .reqContainer {
@@ -33,11 +34,14 @@
 .heading {
   margin-bottom: 2rem;
   color: var(--green);
+  letter-spacing: 1px;
 }
 
 .copy {
   color: var(--green);
   width: 90%;
+  line-height: 140%;
+  font-weight: 500;
 }
 
 .btnContainer {
@@ -66,22 +70,24 @@
 
 .heading2 {
   font-size: 2.4rem;
-  border-bottom: 1px solid var(--black);
+  border-bottom: 1px solid var(--blue);
   width: 100%;
   padding-bottom: 2rem;
-  color: var(--black);
+  color: var(--blue);
+  letter-spacing: 0.5px;
 }
 
 .valueHeading {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   flex: 1;
+  text-transform: uppercase;
+  color: var(--blue);
 }
 
 .value {
-  font-size: 1.8rem;
   width: 100%;
-  color: var(--black);
-  flex: 2;
+  color: var(--blue);
+  flex: 1.5;
 }
 
 .imgContainer {

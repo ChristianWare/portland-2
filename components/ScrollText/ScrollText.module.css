@@ -2,11 +2,6 @@
   background-color: var(--green);
 }
 
-.reveal {
-  /* padding-left: 30%; */
-  /* margin-top: -10rem; */
-}
-
 .text {
   font-size: 8rem;
   letter-spacing: 3px;
@@ -20,8 +15,23 @@
   text-transform: uppercase;
 }
 
+.bottom {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 5rem;
+}
+
+.me {
+  color: var(--tan);
+}
+
 @media screen and (max-width: 968px) {
   .text {
     width: 100%;
+  }
+
+  .bottom {
+    justify-content: center;
   }
 }
