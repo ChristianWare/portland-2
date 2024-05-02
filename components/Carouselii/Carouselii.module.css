@@ -26,10 +26,6 @@
   cursor: pointer;
 }
 
-.img:hover {
-  scale: 1.01;
-}
-
 .btnContainer {
   position: relative;
   z-index: 999;
