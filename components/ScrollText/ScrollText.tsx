@@ -23,7 +23,7 @@ const ScrollText = () => {
   gsap.registerPlugin(ScrollTrigger);
 
   const text =
-    "As a creative developer, I find myself positioned between the realms of design and software engineering. I am not solely a software engineer, nor am I purely an artist. My satisfaction comes from the combination of these two disciplines, blending form and function seamlessly.";
+    "•I'm a creative developer who enjoys blending design with software engineering•";
 
   useEffect(() => {
     const anim = gsap.to(lettersRef.current, {
@@ -33,7 +33,7 @@ const ScrollText = () => {
         start: "top center",
         end: "bottom 85%",
       },
-      color: "#295f4e",
+      color: "#fff5e0",
       duration: 3,
       stagger: 1,
     });
@@ -47,7 +47,7 @@ const ScrollText = () => {
       <LayoutWrapper>
         <div className={styles.reveal}>
           <div ref={triggerRef}>
-            <h2 className={styles.text}>
+            <h2 className={styles.text} lang='en'>
               {text.split("").map((letter, index) => (
                 <span
                   key={index}

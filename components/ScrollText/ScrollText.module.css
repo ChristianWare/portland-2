@@ -1,25 +1,27 @@
 .bgColor {
-  background-color: var(--tan);
+  background-color: var(--green);
 }
 
 .reveal {
-  padding-left: 30%;
-  padding-top: 10rem;
+  /* padding-left: 30%; */
+  /* margin-top: -10rem; */
 }
 
 .text {
-  line-height: 90%;
-  text-transform: uppercase;
-  letter-spacing: -3px;
+  font-size: 8rem;
+  letter-spacing: 3px;
+  width: 80%;
 }
 
 .revealText {
-  color: var(--tan);
-  filter: drop-shadow(0 0 0.06rem rgb(41, 95, 78));
+  color: var(--green);
+  filter: drop-shadow(0 0 0.06rem rgb(20, 30, 70));
+  line-height: 110%;
+  text-transform: uppercase;
 }
 
 @media screen and (max-width: 968px) {
-  .reveal {
-    padding-left: 0px;
+  .text {
+    width: 100%;
   }
 }
