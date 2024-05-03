@@ -13,7 +13,7 @@ import Typescript from "../../public/icons/typescript.svg";
 import Tailwind from "../../public/icons/tailwind.svg";
 import Framer from "../../public/icons/framer.svg";
 
-const frontEnd = [
+const data = [
   {
     icon: <NextJs width={40} heiht={40} className={styles.icon} />,
     name: "Next.Js",
@@ -34,9 +34,6 @@ const frontEnd = [
     icon: <Framer width={40} heiht={40} className={styles.icon} />,
     name: "Framer Motion",
   },
-];
-
-const backEnd = [
   {
     icon: <Framer width={40} heiht={40} className={styles.icon} />,
     name: "Node.js",
@@ -66,7 +63,7 @@ const TechStack = () => {
         <h2 className={styles.heading}>•Tech Stack•</h2>
         <ScrollHorizontalText text='Front End' />
         <div className={styles.stack}>
-          {frontEnd.map((x, index) => (
+          {data.map((x, index) => (
             <motion.div
               variants={fadeIn(index % 2 === 0 ? "up" : "left", 0.3)}
               initial='hidden'
@@ -81,29 +78,8 @@ const TechStack = () => {
             </motion.div>
           ))}
         </div>
-        <ScrollHorizontalText text='Front End' />
-        <br />
-        <br />
-        <br />
-        <br />
+
         <ScrollHorizontalText text='Back End' />
-        <div className={styles.stack}>
-          {backEnd.map((x, index) => (
-            <motion.div
-              variants={fadeIn(index % 2 === 0 ? "up" : "left", 0.3)}
-              initial='hidden'
-              whileInView={"show"}
-              viewport={{ once: false, amount: 0.3 }}
-              key={index}
-              className={styles.box}
-            >
-              {x.icon}
-
-              <h4 className={styles.name}>{x.name}</h4>
-            </motion.div>
-          ))}
-        </div>
-        <ScrollHorizontalText text='Front End' />
       </LayoutWrapper>
     </div>
   );
