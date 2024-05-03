@@ -32,10 +32,11 @@
 }
 
 .heading {
+  margin-top: 2rem;
   margin-bottom: 2rem;
   color: var(--blue);
   letter-spacing: 3px;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   line-height: 100%;
 }
 
@@ -48,7 +49,7 @@
 .copy {
   color: var(--blue);
   opacity: 0.7;
-  width: 90%;
+  width: 70%;
   line-height: 140%;
   font-weight: 700;
 }
@@ -111,15 +112,13 @@
   object-fit: contain;
 }
 
-.svgLogo {
-  color: purple;
-  width: 500px;
-  height: 500px;
-}
-
 @media screen and (max-width: 968px) {
   .content {
     flex-direction: column;
+  }
+
+  .copy {
+    width: 100%;
   }
 }
 

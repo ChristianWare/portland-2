@@ -2,7 +2,6 @@
 
 import LayoutWrapper from "../LayoutWrapper";
 import styles from "./Carousel.module.css";
-import Image from "next/image";
 import Arrow from "../../public/icons/arrow2.svg";
 import { motion } from "framer-motion";
 import { useState } from "react";
@@ -11,6 +10,7 @@ import Cwagency from "../../public/images/cwagency.png";
 import Elite from "../../public/images/elite.png";
 import Nier from "../../public/images/nier.png";
 import Link from "next/link";
+import CircleImage from "../CircleImage/CircleImage";
 
 const Carousel = () => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -31,7 +31,7 @@ const Carousel = () => {
       src: Cwagency,
       title: "Chris Ware Agency",
       description:
-        "Chris Ware Agency is a website where users can learn about the benefits of having a direct booking website over third-party listing platforms like Airbnb or VRBO.",
+        "Chris Ware Agency is a website where users can learn about the benefits of having a direct booking websites.",
       tech: {
         frontend: ["Next.js, CSS Modules, Sanity.io, Node.js"],
       },
@@ -76,7 +76,7 @@ const Carousel = () => {
     <section className={styles.container}>
       <LayoutWrapper>
         <div className={styles.top}>
-          <h2 className={styles.title}>• Recent Projects •</h2>
+          <h2 className={styles.title}>Recent Projects</h2>
           <p className={styles.topCopy}>
             Here are some examples of the work that I have completed over the
             years. Feel free to visit the github and the live link for more
@@ -114,6 +114,22 @@ const Carousel = () => {
                 </Link>
               </div>
             </div>
+            <div className={styles.leftBottomii}>
+              <p className={styles.activeIndex}>
+                {activeIndex + 1} / {data.length}
+              </p>
+              <div className={styles.controls}>
+                <button
+                  className={styles.prevContainer}
+                  onClick={handlePrevious}
+                >
+                  <Arrow className={styles.icon} width={25} height={25} />
+                </button>
+                <button className={styles.nextContainer} onClick={handleNext}>
+                  <Arrow className={styles.icon} width={25} height={25} />
+                </button>
+              </div>
+            </div>
             <div className={styles.leftBottom}>
               <p className={styles.activeIndex}>
                 {activeIndex + 1} / {data.length}
@@ -133,28 +149,13 @@ const Carousel = () => {
           </div>
           <div className={styles.right}>
             <div className={styles.imgContainer}>
-              <Image
+              {/* <Image
                 src={data[activeIndex].src}
                 alt='image'
                 fill
                 className={styles.img}
-              />
-            </div>
-            <div className={styles.leftBottomii}>
-              <p className={styles.activeIndex}>
-                {activeIndex + 1} / {data.length}
-              </p>
-              <div className={styles.controls}>
-                <button
-                  className={styles.prevContainer}
-                  onClick={handlePrevious}
-                >
-                  <Arrow className={styles.icon} width={25} height={25} />
-                </button>
-                <button className={styles.nextContainer} onClick={handleNext}>
-                  <Arrow className={styles.icon} width={25} height={25} />
-                </button>
-              </div>
+              /> */}
+              <CircleImage src={data[activeIndex].src} />
             </div>
           </div>
         </div>

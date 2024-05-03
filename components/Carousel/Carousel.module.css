@@ -18,10 +18,11 @@
 }
 
 .topCopy {
-  color: var(--green);
+  color: var(--blue);
+  opacity: 0.8;
   font-weight: 700;
   margin-bottom: 7rem;
-  width: 60%;
+  width: 30%;
   text-align: right;
 }
 
@@ -63,7 +64,6 @@
 .copyContainer {
   border-bottom: 1px solid var(--blue);
   padding-bottom: 2rem;
-  /* width: 90%; */
 }
 
 .content b {
@@ -177,7 +177,11 @@
 .imgContainer {
   position: relative;
   width: 100%;
-  height: 550px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 10rem;
 }
 
 .img {
@@ -186,19 +190,40 @@
 
 .right {
   display: flex;
-  flex-direction: row-reverse;
   align-items: center;
-  justify-content: flex-start;
-  position: relative;
+  justify-content: center;
+  /* position: relative; */
+  border-left: 1px solid var(--blue);
 }
 
 @media screen and (max-width: 1200px) {
+  .topCopy {
+    width: 60%;
+  }
+
   .copy {
     width: 100%;
   }
 }
 
 @media screen and (max-width: 968px) {
+  .top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .title,
+  .topCopy {
+    text-align: center;
+    width: 80%;
+  }
+
+  .topCopy {
+    margin-bottom: 5rem;
+  }
+
   .content {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -206,6 +231,9 @@
   .right {
     align-items: center;
     justify-content: center;
+    border-left: none;
+    order: -1;
+    padding: 6rem;
   }
 
   .imgContainer {
@@ -230,15 +258,11 @@
   }
 }
 
-@media screen and (max-width: 768px) {
-  .imgContainer1,
-  .imgContainer2,
-  .imgContainer3 {
-    width: 50vw;
-  }
-}
-
 @media screen and (max-width: 668px) {
+  .title, .topCopy {
+    width: 100%;
+  }
+
   .heading,
   .copy {
     width: 100%;
@@ -246,24 +270,19 @@
   }
 
   .right {
-    align-items: flex-end;
-    justify-content: flex-start;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem;
   }
-  .imgContainer1,
-  .imgContainer2,
-  .imgContainer3 {
-    width: 55vw;
-  }
-}
-
-@media screen and (max-width: 668px) {
-  .right {
-    margin-top: 10rem;
-  }
-
   .btnContainer {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .right {
+    padding: 0rem;
   }
 }

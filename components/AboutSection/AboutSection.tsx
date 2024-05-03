@@ -6,6 +6,7 @@ import LayoutWrapper from "../LayoutWrapper";
 import RectangleText from "../RectangleText/RectangleText";
 import styles from "./AboutSection.module.css";
 import { motion } from "framer-motion";
+import SectionIntro from "../SectionIntro/SectionIntro";
 
 const AboutSection = () => {
   const value = [
@@ -40,9 +41,9 @@ const AboutSection = () => {
             viewport={{ once: false, amount: 0.3 }}
             className={styles.left}
           >
+            <SectionIntro text='My tools of choice' />
             <h2 className={styles.heading}>
-              <span>• I</span> build web applications with NextJS and{" "}
-              <span>React •</span>
+              I build web applications with NextJS and React
             </h2>
             <p className={styles.copy}>
               Because of my background in design, and finance, I understand the

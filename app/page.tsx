@@ -23,7 +23,7 @@ export default function Home() {
       <ScrollText />
       <AboutSection />
       <Carousel />
-      <Skills />
+      {/* <Skills /> */}
       <Experience />
       <FinalCta />
     </>

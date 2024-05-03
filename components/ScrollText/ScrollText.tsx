@@ -23,7 +23,7 @@ const ScrollText = () => {
   gsap.registerPlugin(ScrollTrigger);
 
   const text =
-    "• I'm a creative developer who enjoys blending design with software engineering •";
+    "I'm a creative developer who enjoys blending design with software engineering";
 
   useEffect(() => {
     const anim = gsap.to(lettersRef.current, {

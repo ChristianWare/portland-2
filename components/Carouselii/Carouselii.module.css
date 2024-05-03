@@ -45,13 +45,11 @@
   padding: 10px;
   position: relative;
   cursor: pointer;
-    transform: rotate(-45deg);
-
 }
 
 .icon1 {
-  transform: rotate(140deg);
   left: -15px;
+  transform: rotate(-180deg);
 }
 
 .icon2 {
