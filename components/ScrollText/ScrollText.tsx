@@ -34,7 +34,7 @@ const ScrollText = () => {
         start: "top center",
         end: "bottom 85%",
       },
-      color: "#fff5e0",
+      color: "#141e46",
       duration: 3,
       stagger: 1,
     });

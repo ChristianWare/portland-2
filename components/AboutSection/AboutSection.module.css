@@ -1,6 +1,6 @@
 .container {
   background-color: var(--tan);
-  padding-top: 5rem;
+  padding-top: 7rem;
 }
 
 .reqContainer {
@@ -33,20 +33,24 @@
 
 .heading {
   margin-bottom: 2rem;
-  color: var(--green);
-  letter-spacing: 1px;
+  color: var(--blue);
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  line-height: 100%;
 }
 
 .heading span {
   white-space: nowrap;
-  color: var(--green);
+  line-height: 100%;
+  color: var(--blue);
 }
 
 .copy {
-  color: var(--green);
+  color: var(--blue);
+  opacity: 0.7;
   width: 90%;
   line-height: 140%;
-  font-weight: 500;
+  font-weight: 700;
 }
 
 .btnContainer {

@@ -3,9 +3,6 @@
 import LayoutWrapper from "../LayoutWrapper";
 import styles from "./Carousel.module.css";
 import Image from "next/image";
-import Img from "../../public/images/house10.png";
-import Img2 from "../../public/images/house11.png";
-import Img3 from "../../public/images/house12.png";
 import Arrow from "../../public/icons/arrow2.svg";
 import { motion } from "framer-motion";
 import { useState } from "react";
@@ -13,6 +10,7 @@ import Taco from "../../public/images/taco.png";
 import Cwagency from "../../public/images/cwagency.png";
 import Elite from "../../public/images/elite.png";
 import Nier from "../../public/images/nier.png";
+import Link from "next/link";
 
 const Carousel = () => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -22,7 +20,10 @@ const Carousel = () => {
       src: Taco,
       title: "Taco Bell Redesign",
       description:
-        "This project is a redesign of Taco Bell's website. The front end was built with next.js, and the CMS is Sanity.io. The styling was done with CSS Modules so that I can have the most flexibility for design. Each menu item has its slug page where more details are given on that particular item.",
+        "This project is a redesign of Taco Bell's website. The front end was built with next.js, and the CMS is Sanity.io.",
+      tech: {
+        frontend: ["Next.js, CSS Modules, Sanity.io, Node.js"],
+      },
       href: "https://www.livemas.dev/",
       github: "https://github.com/ChristianWare/Tacobell-ii",
     },
@@ -30,7 +31,10 @@ const Carousel = () => {
       src: Cwagency,
       title: "Chris Ware Agency",
       description:
-        "Chris Ware Agency is a website where users can learn about the benefits of having a direct booking website over third-party listing platforms like Airbnb or VRBO. This front-end project with a markdown blog utilizes the local file system with node.js. All styling was done with CSS Modules.",
+        "Chris Ware Agency is a website where users can learn about the benefits of having a direct booking website over third-party listing platforms like Airbnb or VRBO.",
+      tech: {
+        frontend: ["Next.js, CSS Modules, Sanity.io, Node.js"],
+      },
       href: "https://www.chrisware.agency/",
       github: "https://github.com/ChristianWare/chris_ware_agency_ii",
     },
@@ -38,7 +42,10 @@ const Carousel = () => {
       src: Elite,
       title: "Elite Retreat Rentals",
       description:
-        "Elite Retreat Rentals is a fictional website I built to show potential clients what a personalized booking website could look like. It allows users to view all available vacation rental properties listed by the owner, and they can make reservations on each property via the full-function booking system. Users can pay for each reservation in advance using Stripe. All are built in Next.js with Mongodb for the database and Next Auth for the authentication. MERN Stack.",
+        "Elite Retreat Rentals is a fictional website I built to show potential clients what a personalized booking website could look like.",
+      tech: {
+        frontend: ["Next.js, CSS Modules, Sanity.io, Node.js"],
+      },
       href: "https://case-study-one.vercel.app/",
       github: "https://github.com/ChristianWare/Case-Study-One",
     },
@@ -46,8 +53,11 @@ const Carousel = () => {
       src: Nier,
       title: "Nier Transportation",
       description:
-        "Nier Transportation is a client who needed a new website that advertised his luxury black car driving service. This project is primarily front-end built with Next.js and has a markdown blog that utilizes the local file system with node.js. All styling was done with CSS Modules.",
+        "Nier Transportation is a client of mine who needed a new website that advertised his luxury black car driving service.",
       href: "https://www.niertransportation.com/",
+      tech: {
+        frontend: ["Next.js, CSS Modules, Sanity.io, Node.js"],
+      },
       github: "https://github.com/ChristianWare/Nier-Transport-Redesign",
     },
   ];
@@ -65,21 +75,60 @@ const Carousel = () => {
   return (
     <section className={styles.container}>
       <LayoutWrapper>
-        <h2 className={styles.title}>• Recent Projects •</h2>
-        <div className={styles.content} key={activeIndex}>
+        <div className={styles.top}>
+          <h2 className={styles.title}>• Recent Projects •</h2>
+          <p className={styles.topCopy}>
+            Here are some examples of the work that I have completed over the
+            years. Feel free to visit the github and the live link for more
+            details.
+          </p>
+        </div>
+        <div className={styles.content}>
           <div className={styles.left}>
-            <h3 className={styles.heading}>{data[activeIndex].title}</h3>
-            <p className={styles.copy}>{data[activeIndex].description}</p>
-            <div className={styles.controls}>
-              <button className={styles.prevContainer} onClick={handlePrevious}>
-                <Arrow className={styles.icon} width={25} height={25} />
-              </button>
-              <button className={styles.nextContainer} onClick={handleNext}>
-                <Arrow className={styles.icon} width={25} height={25} />
-              </button>
-              <p>
+            <div className={styles.leftContent}>
+              <h3 className={styles.heading}>{data[activeIndex].title}</h3>
+              <div className={styles.copyContainer}>
+                <p className={styles.copy}>{data[activeIndex].description}</p>
+              </div>
+              <div className={styles.techBox}>
+                <b>Tec Stack:</b>
+                <p>{data[activeIndex].tech.frontend}</p>
+              </div>
+              <div className={styles.techBox}>
+                <b>Links:</b>
+                <Link
+                  href={data[activeIndex].href}
+                  target='blank'
+                  className={styles.link}
+                >
+                  Live Site{" "}
+                  <Arrow className={styles.iconLink} width={20} height={20} />
+                </Link>
+                <Link
+                  href={data[activeIndex].github}
+                  target='blank'
+                  className={styles.link}
+                >
+                  Githb{" "}
+                  <Arrow className={styles.iconLink} width={20} height={20} />
+                </Link>
+              </div>
+            </div>
+            <div className={styles.leftBottom}>
+              <p className={styles.activeIndex}>
                 {activeIndex + 1} / {data.length}
               </p>
+              <div className={styles.controls}>
+                <button
+                  className={styles.prevContainer}
+                  onClick={handlePrevious}
+                >
+                  <Arrow className={styles.icon} width={25} height={25} />
+                </button>
+                <button className={styles.nextContainer} onClick={handleNext}>
+                  <Arrow className={styles.icon} width={25} height={25} />
+                </button>
+              </div>
             </div>
           </div>
           <div className={styles.right}>
@@ -90,6 +139,22 @@ const Carousel = () => {
                 fill
                 className={styles.img}
               />
+            </div>
+            <div className={styles.leftBottomii}>
+              <p className={styles.activeIndex}>
+                {activeIndex + 1} / {data.length}
+              </p>
+              <div className={styles.controls}>
+                <button
+                  className={styles.prevContainer}
+                  onClick={handlePrevious}
+                >
+                  <Arrow className={styles.icon} width={25} height={25} />
+                </button>
+                <button className={styles.nextContainer} onClick={handleNext}>
+                  <Arrow className={styles.icon} width={25} height={25} />
+                </button>
+              </div>
             </div>
           </div>
         </div>

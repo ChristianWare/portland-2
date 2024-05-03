@@ -37,18 +37,20 @@
 .icon1,
 .icon2 {
   color: var(--blue);
-  width: 30px;
-  height: 30px;
+  width: 45px;
+  height: 45px;
   background-color: var(--green2);
   border-radius: 50%;
   border: 1px solid var(--blue);
-  padding: 5px;
+  padding: 10px;
   position: relative;
   cursor: pointer;
+    transform: rotate(-45deg);
+
 }
 
 .icon1 {
-  transform: rotate(180deg);
+  transform: rotate(140deg);
   left: -15px;
 }
 
