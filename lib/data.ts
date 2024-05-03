@@ -2,15 +2,6 @@ import Elite from "../public/images/elite.png";
 import Nier from "../public/images/nier.png";
 import Cwagency from "../public/images/cwagency.png";
 import Taco from "../public/images/taco.png";
-import NextJs from "../public/icons/next.png";
-import ReactJs from "../public/icons/react.png";
-import Tailwind from "../public/icons/tailwind.png";
-import Framer from "../public/icons/framer.png";
-import NodeJs from "../public/icons/nodejs.png";
-import Mongo from "../public/icons/mongodb.png";
-import Prisma from "../public/icons/prisma.png";
-import Strapi from "../public/icons/strapi.png";
-import Sanity from "../public/icons/sanity.png";
 
 export const projects = [
   {
@@ -55,6 +46,10 @@ export const experince = [
   {
     title: "Contract Web Developer - KNI",
     years: "JAN 2023 - AUG 2023",
+  },
+  {
+    title: "Contract Software Engineer - Joyous App",
+    years: "OCT 2022 - DEC 2022",
   },
   {
     title: "Software Engineer - Mentorworks",

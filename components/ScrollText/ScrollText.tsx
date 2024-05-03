@@ -59,6 +59,14 @@ const ScrollText = () => {
               ))}
             </h2>
           </div>
+          <div className={styles.bottom}>
+            <p className={styles.copy}>
+              Because of my background in design, and finance, I understand the
+              aesthetic and business side to any project. While websites have to
+              make good impressions on their visitors, they should also motivate
+              them to action.
+            </p>
+          </div>
         </div>
       </LayoutWrapper>
     </div>
