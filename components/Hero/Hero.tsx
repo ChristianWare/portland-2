@@ -26,7 +26,7 @@ const Hero = () => {
             >
               Hello World
               <br />
-              My name is <br /> Christian Ware
+              My name is <br /> Christian Ware.
             </h1>
             <p className={styles.copy}>
               I build semantically structured web applications by thinking

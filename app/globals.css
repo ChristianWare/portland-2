@@ -3,7 +3,7 @@
   --blue: #141e46;
   --blue2: #344aa3;
   --green: #41b06e;
-  --green2: #8decb4;
+  --green2: #2AFFEA;
   --tan: #fff5e0;
   --tan2: #f8e4b9;
   --white: #ffffff;
@@ -59,7 +59,7 @@ h1 {
   font-size: 7rem;
   line-height: 90%;
   text-transform: uppercase;
-  letter-spacing: 2px;
+  /* letter-spacing: 2px; */
 }
 
 h2 {
@@ -152,7 +152,7 @@ input:focus {
 } */
 
 /* Only use in production */
-@media screen and (max-width: 480px) {
+/* @media screen and (max-width: 480px) {
   h1,
   h2 {
     letter-spacing: -4px;
@@ -161,4 +161,4 @@ input:focus {
   h3 {
     letter-spacing: -3;
   }
-}
+} */

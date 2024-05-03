@@ -1,0 +1,46 @@
+.heading {
+  color: var(--blue);
+  margin-bottom: 5rem;
+  text-transform: uppercase;
+}
+
+.stack {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+  margin: 2rem 0rem;
+}
+
+.box {
+  border: 1px solid var(--blue);
+
+  padding: 5rem;
+  padding-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.name {
+  color: var(--blue);
+  font-size: 3.5rem;
+  letter-spacing: 1px;
+}
+
+.icon {
+  color: var(--blue);
+}
+
+@media screen and (max-width: 968px) {
+  .stack {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .stack {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

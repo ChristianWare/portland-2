@@ -1,0 +1,47 @@
+.sliderContainer {
+  border-top: 1px solid var(--blue);
+  border-bottom: 1px solid var(--blue);
+  overflow: hidden;
+  background-color: var(--green2);
+}
+
+.slider {
+  position: relative;
+  white-space: nowrap;
+  display: flex;
+  animation: slideAnimation 100s linear infinite;
+}
+
+.slider h2 {
+  margin: 0;
+  color: var(--blue);
+  font-size: 2rem;
+  padding-bottom: 1rem;
+  animation: slideInfinite 100s linear infinite;
+}
+
+.icon2 {
+  width: 15px;
+  height: 15px;
+  margin-top: 1.5rem;
+  margin-left: 2rem;
+  margin-right: 0.5rem;
+}
+
+@keyframes slideAnimation {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes slideInfinite {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}

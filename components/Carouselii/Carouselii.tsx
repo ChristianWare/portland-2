@@ -67,16 +67,10 @@ const Carouselii = () => {
         ))}
       </div>
       <div className={styles.btnContainer}>
-        <button
-          className='text-white mt-[250px] bg-indigo-250 rounded-md py-2 px-4'
-          onClick={handleBack}
-        >
+        <button onClick={handleBack}>
           <Arrow className={styles.icon1} />
         </button>
-        <button
-          className='text-white mt-[250px] bg-indigo-250 rounded-md py-2 px-4'
-          onClick={handleNext}
-        >
+        <button onClick={handleNext}>
           <Arrow className={styles.icon2} />
         </button>
       </div>

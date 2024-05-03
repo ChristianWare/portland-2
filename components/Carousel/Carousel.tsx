@@ -9,8 +9,9 @@ import Taco from "../../public/images/taco.png";
 import Cwagency from "../../public/images/cwagency.png";
 import Elite from "../../public/images/elite.png";
 import Nier from "../../public/images/nier.png";
-import Link from "next/link";
 import CircleImage from "../CircleImage/CircleImage";
+import RectangleText from "../RectangleText/RectangleText";
+import Button from "../Button/Button";
 
 const Carousel = () => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -76,7 +77,9 @@ const Carousel = () => {
     <section className={styles.container}>
       <LayoutWrapper>
         <div className={styles.top}>
-          <h2 className={styles.title}>Recent Projects</h2>
+          <h2 className={styles.title}>
+            <span>4</span> Recent Projects
+          </h2>
           <p className={styles.topCopy}>
             Here are some examples of the work that I have completed over the
             years. Feel free to visit the github and the live link for more
@@ -85,8 +88,18 @@ const Carousel = () => {
         </div>
         <div className={styles.content}>
           <div className={styles.left}>
-            <div className={styles.leftContent}>
-              <h3 className={styles.heading}>{data[activeIndex].title}</h3>
+            <motion.div
+              key={activeIndex}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.5 }}
+              className={styles.leftContent}
+            >
+              {/* <h3 className={styles.heading}>{data[activeIndex].title}</h3> */}
+              <div className={styles.recContainer}>
+                <RectangleText text={data[activeIndex].title} />
+              </div>
               <div className={styles.copyContainer}>
                 <p className={styles.copy}>{data[activeIndex].description}</p>
               </div>
@@ -96,24 +109,29 @@ const Carousel = () => {
               </div>
               <div className={styles.techBox}>
                 <b>Links:</b>
-                <Link
-                  href={data[activeIndex].href}
-                  target='blank'
-                  className={styles.link}
-                >
-                  Live Site{" "}
-                  <Arrow className={styles.iconLink} width={20} height={20} />
-                </Link>
-                <Link
-                  href={data[activeIndex].github}
-                  target='blank'
-                  className={styles.link}
-                >
-                  Githb{" "}
-                  <Arrow className={styles.iconLink} width={20} height={20} />
-                </Link>
+
+                <div className={styles.btnContainer}>
+                  <Button
+                    btnType='navBtn'
+                    text=' Live Site'
+                    href={data[activeIndex].href}
+                    target='_blank'
+                    download={true}
+                    arrow
+                    iconColor='blue'
+                  />
+                  <Button
+                    btnType='navBtn'
+                    text=' Github'
+                    href={data[activeIndex].github}
+                    target='_blank'
+                    download={true}
+                    arrow
+                    iconColor='blue'
+                  />
+                </div>
               </div>
-            </div>
+            </motion.div>
             <div className={styles.leftBottomii}>
               <p className={styles.activeIndex}>
                 {activeIndex + 1} / {data.length}
@@ -132,7 +150,7 @@ const Carousel = () => {
             </div>
             <div className={styles.leftBottom}>
               <p className={styles.activeIndex}>
-                {activeIndex + 1} / {data.length}
+                0{activeIndex + 1} / 0{data.length}
               </p>
               <div className={styles.controls}>
                 <button
@@ -148,15 +166,16 @@ const Carousel = () => {
             </div>
           </div>
           <div className={styles.right}>
-            <div className={styles.imgContainer}>
-              {/* <Image
-                src={data[activeIndex].src}
-                alt='image'
-                fill
-                className={styles.img}
-              /> */}
+            <motion.div
+              key={activeIndex}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.5 }}
+              className={styles.imgContainer}
+            >
               <CircleImage src={data[activeIndex].src} />
-            </div>
+            </motion.div>
           </div>
         </div>
       </LayoutWrapper>
