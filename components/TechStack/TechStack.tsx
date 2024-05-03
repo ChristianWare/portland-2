@@ -59,9 +59,9 @@ const data = [
 const TechStack = () => {
   return (
     <div className={styles.container}>
+      <ScrollHorizontalText text='Front End' />
       <LayoutWrapper>
         <h2 className={styles.heading}>•Tech Stack•</h2>
-        <ScrollHorizontalText text='Front End' />
         <div className={styles.stack}>
           {data.map((x, index) => (
             <motion.div
@@ -78,9 +78,8 @@ const TechStack = () => {
             </motion.div>
           ))}
         </div>
-
-        <ScrollHorizontalText text='Back End' />
       </LayoutWrapper>
+      <ScrollHorizontalText text='Back End' />
     </div>
   );
 };
