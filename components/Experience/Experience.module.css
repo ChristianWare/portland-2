@@ -4,20 +4,22 @@
 
 .content {
   display: flex;
+  flex-direction: column;
   align-items: flex-start;
   justify-content: center;
   gap: 5rem;
 }
 
 .heading {
-  color: var(--green);
-  margin-bottom: 3rem;
+  color: var(--blue);
+  margin-bottom: 2rem;
 }
 
 .copy {
-  width: 70%;
-  color: var(--green);
-  text-transform: uppercase;
+  width: 50%;
+  color: var(--blue);
+  opacity: 0.7;
+  font-weight: 700;
 }
 
 .left,
@@ -31,7 +33,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 2rem 0rem;
-  border-bottom: 1px solid var(--black);
+  border-bottom: 1px solid var(--blue);
 }
 
 .box:nth-child(1) {
@@ -40,7 +42,7 @@
 
 .title,
 .years {
-  color: var(--green);
+  color: var(--blue);
 }
 
 .btnContainer {

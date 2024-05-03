@@ -2,7 +2,6 @@ import Elite from "../public/images/elite.png";
 import Nier from "../public/images/nier.png";
 import Cwagency from "../public/images/cwagency.png";
 import Taco from "../public/images/taco.png";
-import Typescript from "../public/icons/typescript.png";
 import NextJs from "../public/icons/next.png";
 import ReactJs from "../public/icons/react.png";
 import Tailwind from "../public/icons/tailwind.png";
@@ -48,56 +47,10 @@ export const projects = [
   },
 ] as const;
 
-export const frontEnd = [
-  {
-    icon: NextJs,
-    name: "Next.js",
-  },
-  {
-    icon: ReactJs,
-    name: "React",
-  },
-  {
-    icon: Typescript,
-    name: "Typescript",
-  },
-  {
-    icon: Tailwind,
-    name: "Tailwind",
-  },
-  {
-    icon: Framer,
-    name: "Framer Motion",
-  },
-] as const;
-
-export const backEnd = [
-  {
-    icon: NodeJs,
-    name: "Node.js",
-  },
-  {
-    icon: Mongo,
-    name: "Mongo DB",
-  },
-  {
-    icon: Prisma,
-    name: "Prisma",
-  },
-  {
-    icon: Strapi,
-    name: "Strapi",
-  },
-  {
-    icon: Sanity,
-    name: "Sanity",
-  },
-] as const;
-
 export const experince = [
   {
     title: "Freelance Developer",
-    years: "2018 - Present",
+    years: "JAN 2020 - Present",
   },
   {
     title: "Contract Web Developer - KNI",
@@ -109,7 +62,7 @@ export const experince = [
   },
   {
     title: "Contract Frontend Developer - Fandem",
-    years: "MAY 2021 - Jan 2022",
+    years: "JAN 2021 - Jan 2022",
   },
 ] as const;
 

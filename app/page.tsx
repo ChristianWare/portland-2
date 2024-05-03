@@ -25,8 +25,7 @@ export default function Home() {
       <AboutSection />
       <Carousel />
       <TechStack />
-      {/* <Skills /> */}
-      {/* <Experience /> */}
+      <Experience />
       {/* <FinalCta /> */}
     </>
   );
