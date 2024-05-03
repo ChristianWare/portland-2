@@ -9,7 +9,7 @@
 }
 
 .revealText {
-  color: var(--tan);
+  color: var(--blue);
   filter: drop-shadow(0 0 0.06rem #fff5e0);
   line-height: 110%;
   text-transform: uppercase;
