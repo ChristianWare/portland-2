@@ -65,6 +65,7 @@
   letter-spacing: 1px;
 }
 
+
 .recContainer {
   width: 90%;
   margin-top: 2rem;
@@ -235,6 +236,7 @@
   .recContainer {
     margin-top: 0rem;
     margin-bottom: 5rem;
+    width: 100%;
   }
 
   .imgContainer {
