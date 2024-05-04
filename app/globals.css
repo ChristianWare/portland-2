@@ -3,7 +3,7 @@
   --blue: #141e46;
   --blue2: #344aa3;
   --green: #41b06e;
-  --green2: #2AFFEA;
+  --green2: #2affea;
   --tan: #fff5e0;
   --tan2: #f8e4b9;
   --white: #ffffff;
@@ -20,6 +20,7 @@
   scroll-behavior: smooth;
   scroll-margin-top: 40px;
   -webkit-tap-highlight-color: transparent;
+  hyphens: auto;
 }
 
 html {
@@ -97,6 +98,7 @@ textarea {
   hyphens: auto;
   font-size: 1.6rem;
   line-height: 140%;
+  border: none;
 }
 
 input:focus {

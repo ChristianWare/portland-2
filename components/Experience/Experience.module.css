@@ -40,7 +40,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 2rem 0rem;
-  border-bottom: 1px solid var(--blue);
+  border-bottom: 1px solid gray;
 }
 
 .box:nth-child(1) {

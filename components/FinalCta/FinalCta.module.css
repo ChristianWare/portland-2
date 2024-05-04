@@ -1,5 +1,5 @@
 .container {
-  background-color: var(--green);
+  background-color: var(--tan);
   padding-top: 5rem;
   padding-bottom: 2rem;
 }
@@ -18,52 +18,71 @@
 }
 
 .content {
-  border-radius: 10px;
   padding: 5rem;
   padding-bottom: 3rem;
   margin-left: 5rem;
   margin-right: 5rem;
 }
 
-.circleImageContainer {
-  margin-top: 5rem;
-  margin-bottom: 17rem;
-}
-
 .bottom {
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  gap: 5rem;
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
 }
 
 .left,
 .right {
-  flex: 1;
   width: 100%;
+}
+
+.left {
+  background-color: var(--blue);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 3rem;
+}
+
+.leftTop {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.arrow {
+  width: 130px;
+  height: 130px;
+  color: var(--green2);
+  transform: rotate(-45deg);
+  position: relative;
+  top: -20px;
+  right: -20px;
+}
+
+.leftBottom {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  /* height: 100%; */
 }
 
 .heading {
   font-size: 7rem;
   line-height: 100%;
   text-transform: uppercase;
-  color: var(--tan);
+  color: var(--green2);
   margin-bottom: 1rem;
-  font-size: 8.5rem;
-  font-family: var(--staatliches);
 }
 
-.headingii {
-  font-size: 2.6rem;
-  font-weight: 500;
-  width: 70%;
-  hyphens: none;
-  color: var(--tan);
+.right {
+  padding: 3rem;
+  border: 1px solid gray;
 }
 
 .topText {
-  color: var(--tan);
-  margin-top: 3rem;
+  color: var(--green2);
+  margin-top: 1rem;
   font-size: 2rem;
   font-weight: 500;
   width: 80%;
@@ -85,14 +104,14 @@
   }
 }
 
-@media screen and (max-width: 968px) {
+@media screen and (max-width: 1068px) {
   .content {
     padding: 3rem;
     padding-top: 4rem;
   }
 
   .bottom {
-    flex-direction: column;
+    grid-template-columns: repeat(1, 1fr);
   }
 
   .left {
@@ -100,6 +119,10 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+  }
+
+  .leftTop {
+    width: 100%;
   }
 
   .heading,

@@ -9,9 +9,9 @@ const Footer = () => {
         <div className={styles.right}>
           <div className={styles.middleDesktop}>
             {footer.map((f, index) => (
-                <Link key={index} href={f.href} className={styles.heading}>
-                  {f.heading}
-                </Link>
+              <Link key={index} href={f.href} className={styles.heading}>
+                {f.heading}
+              </Link>
             ))}
           </div>
           <div className={styles.lb2}></div>
@@ -19,7 +19,7 @@ const Footer = () => {
         <div className={styles.bottomDesktop}>
           <div className={styles.bottomLeft}>
             <p className={styles.copy}>
-              &copy; 2023 Chris Ware - All Rights Reserved
+              &copy; 2024 Chris Ware - All Rights Reserved
             </p>
           </div>
         </div>

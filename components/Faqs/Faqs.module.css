@@ -1,6 +1,4 @@
 .container {
-  margin-bottom: 8rem;
-  position: relative;
   background-color: var(--blue);
 }
 
@@ -65,7 +63,7 @@
 
 .headingArrowContainer {
   display: grid;
-  grid-template-columns: .6fr 5fr;
+  grid-template-columns: 0.6fr 5fr;
   gap: 2rem;
 }
 
@@ -94,7 +92,7 @@
 
 .answerbox {
   display: grid;
-  grid-template-columns: .6fr 5fr;
+  grid-template-columns: 0.6fr 5fr;
   gap: 2rem;
 }
 

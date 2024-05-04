@@ -24,7 +24,7 @@
 }
 
 .copy {
-  color: var(--text2);
+  color: var(--blue);
   hyphens: auto;
   font-size: 1.3rem;
   margin-top: 1rem;
@@ -47,7 +47,7 @@
 }
 
 .heading {
-  color: var(--tan);
+  color: var(--blue);
   font-weight: 600;
   font-size: 1.2rem;
   text-transform: uppercase;
@@ -55,7 +55,7 @@
 }
 
 .bottomDesktop {
-  border-top: 1px solid var(--tan);
+  border-top: 1px solid gray;
   display: flex;
   align-items: flex-start;
   justify-content: flex-end;
@@ -63,7 +63,7 @@
 }
 
 .copy {
-  color: var(--tan);
+  color: var(--blue);
   font: 1.2rem;
   width: 100%;
   margin-top: 2rem;
@@ -78,7 +78,7 @@
 }
 
 .icon {
-  color: var(--tan);
+  color: var(--blue);
 }
 
 @media screen and (max-width: 1068px) {
