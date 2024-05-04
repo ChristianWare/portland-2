@@ -61,10 +61,11 @@ const ScrollText = () => {
           </div>
           <div className={styles.bottom}>
             <p className={styles.copy}>
-              Because of my background in design, and finance, I understand the
-              aesthetic and business side to any project. While websites have to
-              make good impressions on their visitors, they should also motivate
-              them to action.
+              As a creative developer, I find myself positioned between the
+              realms of design and software engineering. I am not solely a
+              software engineer, nor am I purely an artist. My satisfaction
+              comes from the combination of these two disciplines, blending form
+              and function seamlessly.
             </p>
           </div>
         </div>
