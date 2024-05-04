@@ -9,6 +9,7 @@ import ScrollText from "@/components/ScrollText/ScrollText";
 import Nav from "@/components/Nav/Nav";
 import Carousel from "@/components/Carousel/Carousel";
 import TechStack from "@/components/TechStack/TechStack";
+import Faqs from "@/components/Faqs/Faqs";
 
 export const metadata: Metadata = {
   title: "Chris Ware's Portfolio Website",
@@ -26,6 +27,7 @@ export default function Home() {
       <Carousel />
       <TechStack />
       <Experience />
+      <Faqs />
       {/* <FinalCta /> */}
     </>
   );

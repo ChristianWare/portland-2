@@ -83,3 +83,65 @@ export const footer = [
     href: "#contact",
   },
 ] as const;
+
+export const faqs = [
+  {
+    id: 36,
+    question:
+      "Why should I have my own website instead of relying on listing platforms like Airbnb?",
+    answer:
+      "This allows you to have more control over your property, lower fees, and personalized branding. You have direct communication with guests and can build a loyal customer base.",
+  },
+  {
+    id: 36.1,
+    question:
+      "How do guests make reservations on a website that allows direct bookings?",
+    answer:
+      "Guests can browse your property, view details, and make reservations directly through your website. You have the flexibility to set your own booking policies and payment processes.",
+  },
+  {
+    id: 36.2,
+    question: "What customizable features do you offer?",
+    answer:
+      "You can customize the website design, branding elements, property details, pricing, and policies. We offer flexibility to tailor the platform to your unique needs.",
+  },
+  {
+    id: 36.3,
+    question: "Will it be easy for guests to find my website?",
+    answer:
+      "We implement SEO strategies to improve the visibility of your website on search engines. Additionally, we can assist with marketing strategies to drive traffic to your platform.",
+  },
+  {
+    id: 36.4,
+    question:
+      "How do I manage bookings and communicate with guests on the platform?",
+    answer:
+      "We provide a user-friendly dashboard where you can manage bookings, communicate with guests, and access important information. Training is offered to ensure you can navigate the platform with ease.",
+  },
+  {
+    id: 36.5,
+    question:
+      "Can I integrate the direct booking website with my existing property management system (PMS)?",
+    answer:
+      "Depending on your PMS, integration may be possible. We'll assess compatibility and work towards seamless integration to streamline your management processes.",
+  },
+  {
+    id: 37,
+    question: "How long does it typically take to build a website?",
+    answer:
+      "The timeline can vary based on the complexity of the project. On average, a small business website takes around 2 to 4 weeks from initial concept to launch.",
+  },
+  {
+    id: 42,
+    question: "Do you offer website maintenance and support?",
+    answer:
+      "Yes, we offer ongoing maintenance and support packages to ensure your website remains up-to-date, secure, and functioning optimally after launch.",
+  },
+  {
+    id: 46,
+    question:
+      "Can you assist with transferring my existing domain name to your hosting service?",
+    answer:
+      "Absolutely, we can guide you through the process of transferring your domain name to our hosting service. We'll ensure a smooth transition so that your website remains accessible with minimal downtime during the switch.",
+  },
+] as const;

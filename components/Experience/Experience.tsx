@@ -6,6 +6,7 @@ import styles from "./Experience.module.css";
 import Button from "../Button/Button";
 import { motion } from "framer-motion";
 import { fadeIn } from "@/animation/variants";
+import SectionIntro from "../SectionIntro/SectionIntro";
 
 const Experience = () => {
   return (
@@ -13,7 +14,10 @@ const Experience = () => {
       <LayoutWrapper>
         <div className={styles.content}>
           <div className={styles.left}>
-            <h2 className={styles.heading}>Experience</h2>
+            <div className={styles.sectionIntroContainer}>
+              <SectionIntro text='Work History' />
+            </div>
+            <h2 className={styles.heading}>• Experience •</h2>
             <p className={styles.copy}>
               As a seasoned web developer, I have experience in creating dynamic
               and responsive websites. I&#39;ve successfully collaborated on a
