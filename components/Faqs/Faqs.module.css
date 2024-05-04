@@ -45,11 +45,9 @@
   transition: all 0.2s ease-in;
 }
 
-/* .qaContainer:hover,
-.active {
-  background-color: var(--blue);
-  color: var(--white);
-} */
+.qaContainer:hover {
+  transform: translateX(5px);
+}
 
 .answerContainer {
   max-height: 0;
