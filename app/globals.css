@@ -113,17 +113,26 @@ textarea:focus {
 ::-webkit-scrollbar-thumb {
   border-radius: 10px;
   background: var(--green2);
+  color: var(--blue);
 }
 
 ::-webkit-scrollbar-thumb:hover {
   background: var(--green2);
+  color: var(--blue);
 }
 
 ::selection {
   background: var(--green2);
+  color: var(--blue);
 }
 ::-moz-selection {
   background: var(--green2);
+  color: var(--blue);
+}
+
+.toastFont {
+  font-family: var(--inter);
+  font-weight: 700;
 }
 
 @media screen and (max-width: 768px) {

@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import localFont from "next/font/local";
 import "./globals.css";
 import NoiseBg from "@/components/NoiseBg/NoiseBg";
+import { Toaster } from "react-hot-toast";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -45,6 +46,19 @@ export default function RootLayout({
       <body
         className={`${inter.className} ${messinaCondensed.variable} ${messina.variable} ${dashing.variable} ${dashingReg.variable}`}
       >
+        <Toaster
+          position='top-center'
+          toastOptions={{
+            className: "toastFont",
+            duration: 6000,
+            style: {
+              border: "2px solid #141e46",
+              borderRadius: "50px",
+              textAlign: "center",
+              whiteSpace: "nowrap",
+            },
+          }}
+        />
         <NoiseBg>{children}</NoiseBg>
       </body>
     </html>

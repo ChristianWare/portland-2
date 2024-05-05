@@ -10,11 +10,14 @@
   },
   "dependencies": {
     "@svgr/webpack": "^8.1.0",
+    "@types/nodemailer": "^6.4.15",
     "framer-motion": "^10.18.0",
     "gsap": "^3.12.4",
     "next": "14.0.4",
+    "nodemailer": "^6.9.13",
     "react": "^18",
     "react-dom": "^18",
+    "react-hook-form": "^7.51.4",
     "react-hot-toast": "^2.4.1",
     "resend": "^2.0.0"
   },

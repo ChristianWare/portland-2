@@ -1,28 +1,63 @@
 "use client";
 
 import styles from "./ContactForm.module.css";
-import { useState } from "react";
 import toast from "react-hot-toast";
+import { useState } from "react";
+import { useForm, SubmitHandler } from "react-hook-form";
 import SubmitButton from "../SubmitButton/SubmitButton";
-import { sendEmail } from "@/actions/sendEmail";
+// import { sendEmail } from "@/actions/sendEmail";
 import Button from "../Button/Button";
+import Arrow from "../../public/icons/arrow2.svg";
+
+interface Inputs {
+  firstName: string;
+  lastName: string;
+  email: string;
+  message: string;
+}
 
 const ContactForm = () => {
-  const [inputs, setInputs] = useState({
-    firstName: "",
-    lastName: "",
-    senderEmail: "",
-    message: "",
-  });
+  const [loading, setLoading] = useState(false);
 
-  const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-  ) => {
-    setInputs((prev: any) => ({
-      ...prev,
-      [e.target.id]: e.target.value,
-    }));
+  const {
+    register,
+    handleSubmit,
+    reset,
+    formState: { errors },
+  } = useForm<Inputs>();
+
+  const onSubmit: SubmitHandler<Inputs> = async (data) => {
+    setLoading(true);
+    const response = await fetch("/api/contact", {
+      method: "POST",
+      body: JSON.stringify(data),
+    }).then((res) => res.json());
+
+    if (response.messageId) {
+      toast.success("Thanks! I'll be in touch soon 😎");
+    } else {
+      toast.error("Opps! Please try again");
+    }
+
+    reset();
+    setLoading(false);
   };
+
+  // const [inputs, setInputs] = useState({
+  //   firstName: "",
+  //   lastName: "",
+  //   senderEmail: "",
+  //   message: "",
+  // });
+
+  // const handleChange = (
+  //   e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  // ) => {
+  //   setInputs((prev: any) => ({
+  //     ...prev,
+  //     [e.target.id]: e.target.value,
+  //   }));
+  // };
   return (
     <div className={styles.content}>
       <div className={styles.bottom}>
@@ -33,24 +68,7 @@ const ContactForm = () => {
           </h3>
         </div>
         <div className={styles.right}>
-          <form
-            className={styles.form}
-            action={async (formData) => {
-              const { data, error } = await sendEmail(formData);
-
-              if (error) {
-                toast.error(error);
-                return;
-              }
-              toast.success("Email sent successfully!");
-              setInputs({
-                firstName: "",
-                lastName: "",
-                senderEmail: "",
-                message: "",
-              });
-            }}
-          >
+          <form className={styles.form} onSubmit={handleSubmit(onSubmit)}>
             <div className={styles.namesContainer}>
               <div className={styles.labelInputBox}>
                 <label htmlFor='firstName'>
@@ -58,12 +76,14 @@ const ContactForm = () => {
                 </label>
                 <input
                   id='firstName'
-                  name='firstName'
                   type='text'
-                  value={inputs.firstName}
-                  onChange={handleChange}
-                  required
+                  {...register("firstName", { required: true })}
                 />
+                {errors.firstName && (
+                  <span className={styles.error}>
+                    *** First Name is required
+                  </span>
+                )}
               </div>
               <div className={styles.labelInputBox}>
                 <label htmlFor='lastName'>
@@ -71,12 +91,14 @@ const ContactForm = () => {
                 </label>
                 <input
                   id='lastName'
-                  name='lastName'
                   type='text'
-                  value={inputs.lastName}
-                  onChange={handleChange}
-                  required
+                  {...register("lastName", { required: true })}
                 />
+                {errors.lastName && (
+                  <span className={styles.error}>
+                    *** Last Name is required
+                  </span>
+                )}
               </div>
             </div>
             <div className={styles.everythingElse}>
@@ -87,12 +109,19 @@ const ContactForm = () => {
                 <input
                   id='senderEmail'
                   type='email'
-                  name='senderEmail'
-                  value={inputs.senderEmail}
-                  onChange={handleChange}
-                  required
+                  {...register("email", {
+                    required: true,
+                    pattern: {
+                      value: /\S+@\S+\.\S+/,
+                      message: "Entered value does not match email format",
+                    },
+                  })}
+                  placeholder='So I can respond. I won&#39;t send you spam.'
                   maxLength={500}
                 />
+                {errors.email && (
+                  <span className={styles.error}>*** Email is required</span>
+                )}
               </div>
 
               <div className={styles.labelInputBox}>
@@ -101,23 +130,20 @@ const ContactForm = () => {
                 </label>
                 <textarea
                   id='message'
-                  name='message'
                   maxLength={5000}
-                  value={inputs.message}
-                  onChange={handleChange}
+                  {...register("message", { required: true })}
+                  placeholder='No solicitations, please.'
                 />
+                {errors.message && (
+                  <span className={styles.error}>*** Message is required</span>
+                )}
               </div>
             </div>
             <div className={styles.btnBtnContainer}>
-              {/* <SubmitButton /> */}
-              <Button
-                btnType='primary'
-                text='Submit'
-                href='/ChrisWareResume2024.pdf'
-                // target='_blank'
-                // download={true}
-                arrow
-              />
+              <button className={styles.btn}>
+                {loading ? "Sending..." : "Submit"}
+                <Arrow className={styles.icon} />
+              </button>
             </div>
           </form>
         </div>
