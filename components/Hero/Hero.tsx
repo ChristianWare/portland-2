@@ -9,6 +9,7 @@ import { motion } from "framer-motion";
 import { fadeIn } from "@/animation/variants";
 import Carouselii from "../Carouselii/Carouselii";
 import SectionIntro from "../SectionIntro/SectionIntro";
+import Scribble from "../../public/icons/scribble.svg";
 
 const Hero = () => {
   return (
@@ -47,9 +48,10 @@ const Hero = () => {
             </div>
           </div>
           <div className={styles.right}>
-            {/* <h2 className={styles.headingii}>
+            <span className={styles.headingii}>
               Recent Projects
-            </h2> */}
+              <Scribble className={styles.icon} />
+            </span>
             <div className={styles.box}>
               <Carouselii />
             </div>

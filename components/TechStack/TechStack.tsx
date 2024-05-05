@@ -6,12 +6,22 @@ import ScrollHorizontalText from "../ScrollHorizontalText/ScrollHorizontalText";
 import styles from "./TechStack.module.css";
 import { motion } from "framer-motion";
 import { fadeIn } from "@/animation/variants";
-import Image from "next/image";
 import NextJs from "../../public/icons/next.svg";
 import ReactJs from "../../public/icons/react.svg";
 import Typescript from "../../public/icons/typescript.svg";
 import Tailwind from "../../public/icons/tailwind.svg";
 import Framer from "../../public/icons/framer.svg";
+import Gsap from "../../public/icons/gsap.svg";
+import HTML from "../../public/icons/html.svg";
+import CSS from "../../public/icons/css.svg";
+import Javascript from "../../public/icons/javascript.svg";
+import Node from "../../public/icons/node.svg";
+import Mongo from "../../public/icons/mongodb.svg";
+import Prisma from "../../public/icons/prisma.svg";
+import Strapi from "../../public/icons/strapi.svg";
+import Sanity from "../../public/icons/sanity.svg";
+import Contentful from "../../public/icons/contentful.svg";
+import Docker from "../../public/icons/docker.svg";
 
 const data = [
   {
@@ -27,16 +37,20 @@ const data = [
     name: "Typescript",
   },
   {
-    icon: <Typescript width={40} heiht={40} className={styles.icon} />,
+    icon: <HTML width={40} heiht={40} className={styles.icon} />,
     name: "HTML",
   },
   {
-    icon: <Typescript width={40} heiht={40} className={styles.icon} />,
+    icon: <CSS width={40} heiht={40} className={styles.icon} />,
     name: "CSS",
   },
   {
-    icon: <Typescript width={40} heiht={40} className={styles.icon} />,
+    icon: <Javascript width={40} heiht={40} className={styles.icon} />,
     name: "Javascript",
+  },
+  {
+    icon: <Node width={40} heiht={40} className={styles.icon} />,
+    name: "Node.js",
   },
   {
     icon: <Tailwind width={40} heiht={40} className={styles.icon} />,
@@ -47,32 +61,32 @@ const data = [
     name: "Framer Motion",
   },
   {
-    icon: <Framer width={40} heiht={40} className={styles.icon} />,
+    icon: <Gsap width={40} heiht={40} className={styles.icon} />,
     name: "GSAP",
   },
   {
-    icon: <Framer width={40} heiht={40} className={styles.icon} />,
-    name: "Node.js",
-  },
-  {
-    icon: <Framer width={40} heiht={40} className={styles.icon} />,
+    icon: <Mongo width={40} heiht={40} className={styles.icon} />,
     name: "Mongo DB",
   },
   {
-    icon: <Framer width={40} heiht={40} className={styles.icon} />,
+    icon: <Prisma width={40} heiht={40} className={styles.icon} />,
     name: "Prisma",
   },
   {
-    icon: <Framer width={40} heiht={40} className={styles.icon} />,
+    icon: <Strapi width={40} heiht={40} className={styles.icon} />,
     name: "Strapi",
   },
   {
-    icon: <Framer width={40} heiht={40} className={styles.icon} />,
+    icon: <Sanity width={40} heiht={40} className={styles.icon} />,
     name: "Sanity",
   },
   {
-    icon: <Framer width={40} heiht={40} className={styles.icon} />,
+    icon: <Contentful width={40} heiht={40} className={styles.icon} />,
     name: "Contentful",
+  },
+  {
+    icon: <Docker width={40} heiht={40} className={styles.icon} />,
+    name: "Docker",
   },
 ];
 

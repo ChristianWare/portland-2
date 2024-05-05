@@ -95,7 +95,7 @@ export const faqs = [
     id: 36.1,
     question: "Can you explain your role in previous Next.js projects?",
     answer:
-      "I have contributed to many Next.js projects, both large and small. I have desiged components, implemented server-side rendering, optimizing performance, and integrating APIs.",
+      "I have contributed to many Next.js projects, both large and small. I have desiged components, implemented server-side rendering, optimized performance, and integrated APIs.",
   },
   {
     id: 36.2,
@@ -107,7 +107,7 @@ export const faqs = [
     id: 36.3,
     question: "How do you handle state management in Next.js applications?",
     answer:
-      "Depending on the project/situation, I use the built in React features such as useState and useEffect. But if the state needs to be accessible accross the entire app, then I'll use libraries like Redux or Zustand, and sometimes even the Context API.",
+      "Depending on the project/situation, I use the built in React features useState and useEffect. But if the state needs to be accessible accross the entire app, then I'll use libraries like Redux or Zustand. Sometimes I'll use the built in Context API.",
   },
   {
     id: 36.4,

@@ -50,7 +50,7 @@
 .right {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-end;
   justify-content: center;
   position: relative;
 }
@@ -58,8 +58,16 @@
 .headingii {
   position: absolute;
   bottom: 0;
-  font-size: 3rem;
+  font-size: 2rem;
   color: var(--blue);
+}
+
+.icon {
+  width: 60px;
+  height: 60px;
+  color: var(--blue);
+  transform: rotate(-100deg);
+  margin-left: 1rem;
 }
 
 .box {
@@ -128,11 +136,31 @@
     margin-top: 15rem;
     margin-bottom: 15rem;
   }
+
+  .right {
+    align-items: center;
+  }
+
+  .headingii {
+    display: block;
+    position: relative;
+    top: -30px;
+  }
+
+  .icon {
+    transform: rotate(-100deg) rotateY(-180deg);
+    position: relative;
+    top: 15px;
+  }
 }
 
 @media screen and (max-width: 768px) {
   .content {
     grid-gap: 7rem;
+  }
+
+  .headingii {
+    top: -50px;
   }
 }
 
