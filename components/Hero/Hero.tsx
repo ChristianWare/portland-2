@@ -58,7 +58,6 @@ const Hero = () => {
           </div>
         </div>
         <div className={styles.bottom}>
-          {/* <Time /> */}
           <Link
             href='https://www.linkedin.com/in/christian-ware/'
             target='_blank'
