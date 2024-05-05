@@ -30,7 +30,6 @@
   font-size: 7rem;
   line-height: 110%;
   text-transform: uppercase;
-  
 }
 
 .copy {
@@ -45,6 +44,10 @@
   align-items: center;
   justify-content: flex-start;
   gap: 3rem;
+}
+
+.btnContainer p {
+  color: var(--blue);
 }
 
 .right {

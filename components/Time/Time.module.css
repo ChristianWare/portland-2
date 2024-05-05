@@ -1,18 +1,25 @@
 .detail {
   text-align: center;
-  border-right: 1px solid var(--blue);
   padding: 2rem 0rem;
   color: var(--blue);
   text-transform: uppercase;
   font-size: 1.8rem;
   font-weight: 700;
-
   transition: all 0.1s ease-in;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
 }
 
 .detail:hover {
   background-color: var(--green2);
   color: var(--black);
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
 }
 
 @media screen and (max-width: 568px) {

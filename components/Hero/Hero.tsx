@@ -16,7 +16,7 @@ const Hero = () => {
       <LayoutWrapper>
         <div className={styles.content}>
           <div className={styles.left}>
-            <SectionIntro text='Hero section intro' />
+            <SectionIntro text='Portfolio website' />
             <h1
               // variants={fadeIn("down", 0.3)}
               // initial='hidden'
@@ -42,7 +42,7 @@ const Hero = () => {
                 arrow
               />
               <p>
-                Medical consultation <br /> for <b>$350</b>
+                Learn about my skills <br /> and <b>portfolio projects</b>
               </p>
             </div>
           </div>
@@ -71,13 +71,7 @@ const Hero = () => {
           >
             Git Hub
           </Link>
-          <Link
-            href='https://www.behance.com/'
-            target='_blank'
-            className={styles.detail}
-          >
-            Behance
-          </Link>
+          <Time />
         </div>
       </LayoutWrapper>
     </section>
