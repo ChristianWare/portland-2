@@ -5,10 +5,10 @@ import styles from "./Carousel.module.css";
 import Arrow from "../../public/icons/arrow2.svg";
 import { motion } from "framer-motion";
 import { useState } from "react";
-import Taco from "../../public/images/taco.png";
-import Cwagency from "../../public/images/cwagency.png";
-import Elite from "../../public/images/elite.png";
-import Nier from "../../public/images/nier.png";
+import Taco from "../../public/images/img5.jpg";
+import Elite from "../../public/images/elite.webp";
+import Nier from "../../public/images/fleet3.png";
+import Fonts from "../../public/images/house8.png";
 import CircleImage from "../CircleImage/CircleImage";
 import RectangleText from "../RectangleText/RectangleText";
 import Button from "../Button/Button";
@@ -23,29 +23,34 @@ const Carousel = () => {
       description:
         "This project is a redesign of Taco Bell's website. The front end was built with next.js, and the CMS is Sanity.io.",
       tech: {
-        frontend: ["Next.js, CSS Modules, Sanity.io, Node.js"],
+        frontend: ["Next.Js, CSS Modules"],
+        backend: ["Sanity.io"],
       },
       href: "https://www.livemas.dev/",
       github: "https://github.com/ChristianWare/Tacobell-ii",
     },
     {
-      src: Cwagency,
-      title: "Chris Ware Agency",
+      src: Fonts,
+      title: "Fonts & Footers",
       description:
-        "Chris Ware Agency is a website where users can learn about the benefits of having a direct booking websites.",
+        "Fonts and Footers is a web design agency that builds direct booking websites for vacation rental property owners.",
       tech: {
-        frontend: ["Next.js, CSS Modules, Sanity.io, Node.js"],
+        frontend: ["Next.Js, CSS Modules, Framer Motion, GSAP"],
+        backend: ["Sanity.io, Node.js, MDX"],
       },
-      href: "https://www.chrisware.agency/",
-      github: "https://github.com/ChristianWare/chris_ware_agency_ii",
+      href: "https://www.fontsandfooters.com/",
+      github: "https://github.com/ChristianWare/Fonts-Footers-ii",
     },
     {
       src: Elite,
       title: "Elite Retreat Rentals",
       description:
-        "Elite Retreat Rentals is a fictional website I built to show potential clients what a personalized booking website could look like.",
+        "Elite Retreat Rentals is a Phonenix, AZ based company that provides lodging services to travelers at an affordable price.",
       tech: {
-        frontend: ["Next.js, CSS Modules, Sanity.io, Node.js"],
+        frontend: [
+          "Next.Js, Next Auth, Redux, CSS Modules, Framer Motion, Chart.Js,",
+        ],
+        backend: ["Mongo DB, Mongoose, Sanity.io, Node.js, Node Mailer"],
       },
       href: "https://case-study-one.vercel.app/",
       github: "https://github.com/ChristianWare/Case-Study-One",
@@ -54,11 +59,12 @@ const Carousel = () => {
       src: Nier,
       title: "Nier Transportation",
       description:
-        "Nier Transportation is a client of mine who needed a new website that advertised his luxury black car driving service.",
-      href: "https://www.niertransportation.com/",
+        "Nier Transportation is a luxury black car driving service based in Phoenix, AZ, specializing in airport transfers, and long distance drives.",
       tech: {
-        frontend: ["Next.js, CSS Modules, Sanity.io, Node.js"],
+        frontend: ["Next.js, CSS Modules, Framer Motion"],
+        backend: ["Sanity.io"],
       },
+      href: "https://www.niertransportation.com/",
       github: "https://github.com/ChristianWare/Nier-Transport-Redesign",
     },
   ];
@@ -96,7 +102,6 @@ const Carousel = () => {
               transition={{ duration: 0.5 }}
               className={styles.leftContent}
             >
-              {/* <h3 className={styles.heading}>{data[activeIndex].title}</h3> */}
               <div className={styles.recContainer}>
                 <RectangleText text={data[activeIndex].title} />
               </div>
@@ -104,8 +109,15 @@ const Carousel = () => {
                 <p className={styles.copy}>{data[activeIndex].description}</p>
               </div>
               <div className={styles.techBox}>
-                <b>Tec Stack:</b>
-                <p>{data[activeIndex].tech.frontend}</p>
+                <b>Tech Stack:</b>
+                <div>
+                  <span>Front End:</span>
+                  <p>{data[activeIndex].tech.frontend}</p>
+                </div>
+                <div>
+                  <span>Back End:</span>
+                  <p>{data[activeIndex].tech.backend}</p>
+                </div>
               </div>
               <div className={styles.techBox}>
                 <b>Links:</b>

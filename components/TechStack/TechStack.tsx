@@ -27,12 +27,28 @@ const data = [
     name: "Typescript",
   },
   {
+    icon: <Typescript width={40} heiht={40} className={styles.icon} />,
+    name: "HTML",
+  },
+  {
+    icon: <Typescript width={40} heiht={40} className={styles.icon} />,
+    name: "CSS",
+  },
+  {
+    icon: <Typescript width={40} heiht={40} className={styles.icon} />,
+    name: "Javascript",
+  },
+  {
     icon: <Tailwind width={40} heiht={40} className={styles.icon} />,
     name: "Tailwind",
   },
   {
     icon: <Framer width={40} heiht={40} className={styles.icon} />,
     name: "Framer Motion",
+  },
+  {
+    icon: <Framer width={40} heiht={40} className={styles.icon} />,
+    name: "GSAP",
   },
   {
     icon: <Framer width={40} heiht={40} className={styles.icon} />,
@@ -53,6 +69,10 @@ const data = [
   {
     icon: <Framer width={40} heiht={40} className={styles.icon} />,
     name: "Sanity",
+  },
+  {
+    icon: <Framer width={40} heiht={40} className={styles.icon} />,
+    name: "Contentful",
   },
 ];
 

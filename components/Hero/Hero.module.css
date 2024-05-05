@@ -3,9 +3,6 @@
 }
 
 .content {
-  /* display: flex;
-  align-items: center;
-  justify-content: center; */
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 2rem;
@@ -103,7 +100,7 @@
 @media screen and (max-width: 1068px) {
   .content {
     grid-template-columns: repeat(1, 1fr);
-    grid-gap: 4rem;
+    grid-gap: 8rem;
   }
 
   .left {

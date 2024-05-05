@@ -65,7 +65,6 @@
   letter-spacing: 1px;
 }
 
-
 .recContainer {
   width: 90%;
   margin-top: 2rem;
@@ -88,9 +87,16 @@
   margin-bottom: 1rem;
 }
 
-.techBox p {
-  margin-top: 1rem;
+.techBox span {
+  display: block;
+  margin-top: 2rem;
   color: var(--blue);
+  text-decoration: underline;
+}
+
+.techBox p {
+  color: var(--blue);
+  font-weight: 500;
 }
 
 .btnContainer {

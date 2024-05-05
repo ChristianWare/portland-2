@@ -7,6 +7,10 @@ import Img2 from "../../public/images/house11.png";
 import Img3 from "../../public/images/house12.png";
 import Img4 from "../../public/images/house13.png";
 import Img5 from "../../public/images/house13.png";
+import Taco from "../../public/images/img5.jpg";
+import Elite from "../../public/images/elite.webp";
+import Nier from "../../public/images/fleet3.png";
+import Fonts from "../../public/images/house8.png";
 import { useState } from "react";
 import Image from "next/image";
 import Arrow from "../../public/icons/arrow2.svg";
@@ -31,7 +35,7 @@ const Carouselii = () => {
     });
   };
 
-  const images = [Img1, Img2, Img3, Img4, Img5];
+  const images = [Taco, Elite, Nier, Fonts, Taco];
 
   const positions = ["center,", "left1", "left", "right", "right1"];
 
