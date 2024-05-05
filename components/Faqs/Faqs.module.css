@@ -6,7 +6,11 @@
   display: flex;
   align-items: flex-start;
   justify-content: center;
-  gap: 1rem;
+  gap: 5rem;
+}
+
+.top {
+  flex: 1;
 }
 
 .sectionIntroContainer {
@@ -34,6 +38,7 @@
   align-items: flex-start;
   gap: 1rem;
   margin-top: 3rem;
+  flex: 1;
 }
 
 .qaContainer {
@@ -43,10 +48,6 @@
   cursor: pointer;
   user-select: none;
   transition: all 0.2s ease-in;
-}
-
-.qaContainer:hover {
-  transform: translateX(5px);
 }
 
 .answerContainer {
@@ -85,7 +86,6 @@
   font-size: 3rem;
   line-height: 120%;
   hyphens: auto;
-  width: 90%;
 }
 
 .answerbox {
@@ -98,10 +98,7 @@
   color: var(--tan);
   opacity: 0.7;
   margin-top: 1.5rem;
-  position: relative;
-  /* left: 75px; */
   hyphens: auto;
-  width: 90%;
 }
 
 .btnContainer {
@@ -111,7 +108,7 @@
   margin-top: 3rem;
 }
 
-@media screen and (max-width: 820px) {
+@media screen and (max-width: 968px) {
   .top {
     display: flex;
     flex-direction: column;
@@ -121,6 +118,7 @@
 
   .content {
     flex-direction: column;
+    gap: 3rem;
   }
 
   .heading {

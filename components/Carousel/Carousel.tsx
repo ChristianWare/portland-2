@@ -80,7 +80,7 @@ const Carousel = () => {
   };
 
   return (
-    <section className={styles.container}>
+    <section className={styles.container} id='projects'>
       <LayoutWrapper>
         <div className={styles.top}>
           <h2 className={styles.title}>

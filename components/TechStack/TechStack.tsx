@@ -78,7 +78,7 @@ const data = [
 
 const TechStack = () => {
   return (
-    <div className={styles.container}>
+    <div className={styles.container} id='skills'>
       <ScrollHorizontalText text='Front End' />
       <LayoutWrapper>
         <h2 className={styles.heading}>• Tech Stack •</h2>

@@ -1,6 +1,5 @@
 "use client";
 
-import ContentPadding from "../ContentPadding/ContentPadding";
 import styles from "./Faqs.module.css";
 import { faqs } from "../../lib/data";
 import { useState } from "react";
@@ -18,7 +17,7 @@ const Faqs = () => {
   };
 
   return (
-    <section className={styles.container}>
+    <section className={styles.container} id='faq'>
       <LayoutWrapper>
         <div className={styles.content}>
           <div className={styles.top}>
@@ -27,13 +26,12 @@ const Faqs = () => {
             </div>
             <h2 className={styles.heading}>• You May Have Wondered •</h2>
             <p className={styles.copy}>
-              Commonly asked questions and answers. If you do not see your
-              question here, feel free to call us anytime to ask, and we will
-              gladly give you a satisfactory answer.
+              Here are some common questions asked by potential employers. If
+              you do not see your question here feel free to reach out.
             </p>
           </div>
           <div className={styles.bottom}>
-            {faqs.slice(0, 5).map((x, i) => (
+            {faqs.map((x, i) => (
               <div
                 key={x.id}
                 className={`${styles.qaContainer} ${

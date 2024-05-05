@@ -5,7 +5,7 @@ import styles from "./CircleImage.module.css";
 import { FC } from "react";
 
 interface Props {
-  src?: string;
+  src?: string | StaticImageData;
   text?: string;
 }
 

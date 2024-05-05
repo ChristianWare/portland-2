@@ -79,69 +79,40 @@ export const footer = [
   },
   {
     id: 16,
-    heading: "Contact",
-    href: "#contact",
+    heading: "FAQ",
+    href: "#faq",
   },
 ] as const;
 
 export const faqs = [
   {
     id: 36,
-    question:
-      "Why should I have my own website instead of relying on listing platforms like Airbnb?",
+    question: "What is your experience with Next.js?",
     answer:
-      "This allows you to have more control over your property, lower fees, and personalized branding. You have direct communication with guests and can build a loyal customer base.",
+      "I have been working with Next.js since version 10 was available with the pages router. Now I build all my projects with the latest verion 14, which utilizes the app router.",
   },
   {
     id: 36.1,
-    question:
-      "How do guests make reservations on a website that allows direct bookings?",
+    question: "Can you explain your role in previous Next.js projects?",
     answer:
-      "Guests can browse your property, view details, and make reservations directly through your website. You have the flexibility to set your own booking policies and payment processes.",
+      "I have contributed to many Next.js projects, both large and small. I have desiged components, implemented server-side rendering, optimizing performance, and integrating APIs.",
   },
   {
     id: 36.2,
-    question: "What customizable features do you offer?",
+    question: "What technologies do you use alongside Next.js?",
     answer:
-      "You can customize the website design, branding elements, property details, pricing, and policies. We offer flexibility to tailor the platform to your unique needs.",
+      "I am proficient in other technologies such as React, Node.js, MongoDB, GraphQL, and many more.",
   },
   {
     id: 36.3,
-    question: "Will it be easy for guests to find my website?",
+    question: "How do you handle state management in Next.js applications?",
     answer:
-      "We implement SEO strategies to improve the visibility of your website on search engines. Additionally, we can assist with marketing strategies to drive traffic to your platform.",
+      "Depending on the project/situation, I use the built in React features such as useState and useEffect. But if the state needs to be accessible accross the entire app, then I'll use libraries like Redux or Zustand, and sometimes even the Context API.",
   },
   {
     id: 36.4,
-    question:
-      "How do I manage bookings and communicate with guests on the platform?",
+    question: "Have you worked with Next.js for SEO optimization?",
     answer:
-      "We provide a user-friendly dashboard where you can manage bookings, communicate with guests, and access important information. Training is offered to ensure you can navigate the platform with ease.",
-  },
-  {
-    id: 36.5,
-    question:
-      "Can I integrate the direct booking website with my existing property management system (PMS)?",
-    answer:
-      "Depending on your PMS, integration may be possible. We'll assess compatibility and work towards seamless integration to streamline your management processes.",
-  },
-  {
-    id: 37,
-    question: "How long does it typically take to build a website?",
-    answer:
-      "The timeline can vary based on the complexity of the project. On average, a small business website takes around 2 to 4 weeks from initial concept to launch.",
-  },
-  {
-    id: 42,
-    question: "Do you offer website maintenance and support?",
-    answer:
-      "Yes, we offer ongoing maintenance and support packages to ensure your website remains up-to-date, secure, and functioning optimally after launch.",
-  },
-  {
-    id: 46,
-    question:
-      "Can you assist with transferring my existing domain name to your hosting service?",
-    answer:
-      "Absolutely, we can guide you through the process of transferring your domain name to our hosting service. We'll ensure a smooth transition so that your website remains accessible with minimal downtime during the switch.",
+      "Yes, I have optimized many Next.js applications for SEO by implementing dynamic routing, meta tags, and structured data to improve search engine visibility.",
   },
 ] as const;
