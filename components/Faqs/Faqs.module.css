@@ -95,8 +95,8 @@
 }
 
 .answer {
-  color: var(--tan);
-  opacity: 0.7;
+  color: var(--green2);
+  font-weight: 500;
   margin-top: 1.5rem;
   hyphens: auto;
 }

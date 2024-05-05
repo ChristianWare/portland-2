@@ -173,17 +173,18 @@
     background-color: var(--tan);
     padding: 1rem;
     padding-left: 2rem;
+    border-left: 1px solid var(--blue);
     transform-origin: top;
   }
 
   .navMenu.active {
-    right: -35%;
+    right: -30%;
   }
 
   .navItem {
-    font-size: 3rem;
-    color: var(--black2);
-    font-family: var(--staatliches);
+    font-size: 5rem;
+    color: var(--blue);
+    font-family: var(--dashing);
     line-height: 0.8;
     text-transform: uppercase;
     letter-spacing: -2px;
