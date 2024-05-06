@@ -16,6 +16,7 @@ const ScrollHorizontalText = ({ text }: Props) => {
   const slider = useRef(null);
   let xPercent = 0;
   let direction = -1;
+  
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
     gsap.to(slider.current, {
@@ -31,6 +32,7 @@ const ScrollHorizontalText = ({ text }: Props) => {
     });
     requestAnimationFrame(animate);
   }, []);
+
   const animate = () => {
     if (xPercent < -100) {
       xPercent = 0;

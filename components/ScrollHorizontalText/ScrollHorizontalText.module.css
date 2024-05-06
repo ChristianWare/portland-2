@@ -9,7 +9,6 @@
   position: relative;
   white-space: nowrap;
   display: flex;
-  animation: slideAnimation 100s linear infinite;
 }
 
 .slider h2 {
@@ -17,7 +16,6 @@
   color: var(--blue);
   font-size: 2rem;
   padding-bottom: 1rem;
-  animation: slideInfinite 100s linear infinite;
 }
 
 .icon2 {
