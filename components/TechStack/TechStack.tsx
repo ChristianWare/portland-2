@@ -107,7 +107,6 @@ const TechStack = () => {
               className={styles.box}
             >
               {x.icon}
-
               <h4 className={styles.name}>{x.name}</h4>
             </motion.div>
           ))}
