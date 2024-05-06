@@ -12,7 +12,7 @@
     "@svgr/webpack": "^8.1.0",
     "@types/nodemailer": "^6.4.15",
     "framer-motion": "^10.18.0",
-    "gsap": "^3.12.4",
+    "gsap": "^3.12.5",
     "next": "14.0.4",
     "nodemailer": "^6.9.13",
     "react": "^18",

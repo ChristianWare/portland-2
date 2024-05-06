@@ -52,7 +52,7 @@ const Carousel = () => {
         ],
         backend: ["Mongo DB, Mongoose, Sanity.io, Node.js, Node Mailer"],
       },
-      href: "https://case-study-one.vercel.app/",
+      href: "https://www.eliteretreatrentals.com/",
       github: "https://github.com/ChristianWare/Case-Study-One",
     },
     {
