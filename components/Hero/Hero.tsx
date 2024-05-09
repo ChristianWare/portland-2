@@ -5,8 +5,6 @@ import LayoutWrapper from "../LayoutWrapper";
 import styles from "./Hero.module.css";
 import Link from "next/link";
 import Time from "../Time/Time";
-import { motion } from "framer-motion";
-import { fadeIn } from "@/animation/variants";
 import Carouselii from "../Carouselii/Carouselii";
 import SectionIntro from "../SectionIntro/SectionIntro";
 import Scribble from "../../public/icons/scribble.svg";
@@ -18,13 +16,7 @@ const Hero = () => {
         <div className={styles.content}>
           <div className={styles.left}>
             <SectionIntro text='Portfolio website' />
-            <h1
-              // variants={fadeIn("down", 0.3)}
-              // initial='hidden'
-              // whileInView={"show"}
-              // viewport={{ once: false, amount: 0.3 }}
-              className={styles.heading}
-            >
+            <h1 className={styles.heading}>
               Hello World
               <br />
               My name is <br /> Christian Ware.

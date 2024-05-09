@@ -2,11 +2,6 @@
 
 import styles from "./Carouselii.module.css";
 import { motion } from "framer-motion";
-import Img1 from "../../public/images/house10.png";
-import Img2 from "../../public/images/house11.png";
-import Img3 from "../../public/images/house12.png";
-import Img4 from "../../public/images/house13.png";
-import Img5 from "../../public/images/house13.png";
 import Taco from "../../public/images/img5.jpg";
 import Elite from "../../public/images/elite.webp";
 import Nier from "../../public/images/fleet3.png";
@@ -35,7 +30,7 @@ const Carouselii = () => {
     });
   };
 
-  const images = [Taco, Elite, Nier, Fonts, Taco];
+  const images = [Taco, Elite, Nier, Taco, Fonts];
 
   const positions = ["center,", "left1", "left", "right", "right1"];
 

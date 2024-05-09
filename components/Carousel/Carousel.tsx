@@ -36,7 +36,7 @@ const Carousel = () => {
         "Fonts and Footers is a web design agency that builds direct booking websites for vacation rental property owners.",
       tech: {
         frontend: ["Next.Js, CSS Modules, Framer Motion, GSAP"],
-        backend: ["Sanity.io, Node.js, MDX"],
+        backend: ["Sanity.io, Node.js"],
       },
       href: "https://www.fontsandfooters.com/",
       github: "https://github.com/ChristianWare/Fonts-Footers-ii",
@@ -50,7 +50,7 @@ const Carousel = () => {
         frontend: [
           "Next.Js, Next Auth, Redux, CSS Modules, Framer Motion, Chart.Js,",
         ],
-        backend: ["Mongo DB, Mongoose, Sanity.io, Node.js, Node Mailer"],
+        backend: ["Mongo DB, Mongoose, Sanity.io, Node.js"],
       },
       href: "https://www.eliteretreatrentals.com/",
       github: "https://github.com/ChristianWare/Case-Study-One",
@@ -62,7 +62,7 @@ const Carousel = () => {
         "Nier Transportation is a luxury black car driving service based in Phoenix, AZ, specializing in airport transfers, and long distance drives.",
       tech: {
         frontend: ["Next.js, CSS Modules, Framer Motion"],
-        backend: ["Sanity.io"],
+        backend: ["Node.js"],
       },
       href: "https://www.niertransportation.com/",
       github: "https://github.com/ChristianWare/Nier-Transport-Redesign",
