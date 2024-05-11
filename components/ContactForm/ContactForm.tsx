@@ -4,8 +4,6 @@ import styles from "./ContactForm.module.css";
 import toast from "react-hot-toast";
 import { useState } from "react";
 import { useForm, SubmitHandler } from "react-hook-form";
-import SubmitButton from "../SubmitButton/SubmitButton";
-import Button from "../Button/Button";
 import Arrow from "../../public/icons/arrow2.svg";
 
 interface Inputs {
