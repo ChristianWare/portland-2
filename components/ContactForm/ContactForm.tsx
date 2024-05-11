@@ -5,7 +5,6 @@ import toast from "react-hot-toast";
 import { useState } from "react";
 import { useForm, SubmitHandler } from "react-hook-form";
 import SubmitButton from "../SubmitButton/SubmitButton";
-// import { sendEmail } from "@/actions/sendEmail";
 import Button from "../Button/Button";
 import Arrow from "../../public/icons/arrow2.svg";
 
