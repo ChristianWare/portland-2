@@ -43,21 +43,6 @@ const ContactForm = () => {
     setLoading(false);
   };
 
-  // const [inputs, setInputs] = useState({
-  //   firstName: "",
-  //   lastName: "",
-  //   senderEmail: "",
-  //   message: "",
-  // });
-
-  // const handleChange = (
-  //   e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-  // ) => {
-  //   setInputs((prev: any) => ({
-  //     ...prev,
-  //     [e.target.id]: e.target.value,
-  //   }));
-  // };
   return (
     <div className={styles.content}>
       <div className={styles.bottom}>
