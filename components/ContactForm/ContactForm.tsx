@@ -64,7 +64,7 @@ const ContactForm = () => {
         <div className={styles.left}>
           <h3 className={styles.headingii}>
             Thank you for taking the time to review my portfolio. I look forward
-            to speaking with you.
+            to speaking with you soon.
           </h3>
         </div>
         <div className={styles.right}>
