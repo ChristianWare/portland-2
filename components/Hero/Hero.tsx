@@ -17,9 +17,9 @@ const Hero = () => {
           <div className={styles.left}>
             <SectionIntro text='Portfolio website' />
             <h1 className={styles.heading}>
-              Hello World
+              Hello World!
               <br />
-              My name is <br /> Christian Ware.
+              My name is <br /> Chris Ware.
             </h1>
             <p className={styles.copy}>
               I build semantically structured web applications by thinking
